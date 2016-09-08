@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		376636C56ACEEA8585B9616E /* Pods_VideoCaptureUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 861366B96BA8E4425E995BBE /* Pods_VideoCaptureUITests.framework */; };
 		42A8D9291D7D2332009C5978 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A8D9281D7D2332009C5978 /* AppDelegate.swift */; };
 		42A8D92B1D7D2332009C5978 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A8D92A1D7D2332009C5978 /* MasterViewController.swift */; };
 		42A8D92D1D7D2332009C5978 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A8D92C1D7D2332009C5978 /* DetailViewController.swift */; };
@@ -20,14 +21,9 @@
 		845521841D7DAE3C00ED2F58 /* VCBaseNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845521831D7DAE3C00ED2F58 /* VCBaseNavigationViewController.swift */; };
 		846628611D7E6CBC0025AED5 /* VCTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846628601D7E6CBC0025AED5 /* VCTools.swift */; };
 		847ABBB11D7FB1DB00B8CDDE /* VCCamerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847ABBB01D7FB1DB00B8CDDE /* VCCamerViewController.swift */; };
-		847ABBB31D8024D900B8CDDE /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 847ABBB21D8024D800B8CDDE /* SnapKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		847ABBB41D8024D900B8CDDE /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 847ABBB21D8024D800B8CDDE /* SnapKit.framework */; };
-		84AA49EF1D7D618900731048 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84AA49EE1D7D618900731048 /* Alamofire.framework */; };
-		84AA49F11D7D619600731048 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84AA49F01D7D619600731048 /* ReactiveCocoa.framework */; };
-		84AA49F31D7D619D00731048 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84AA49F21D7D619D00731048 /* Realm.framework */; };
-		84AA49F51D7D620700731048 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84AA49F41D7D620700731048 /* RealmSwift.framework */; };
-		84AA49F71D7D620D00731048 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84AA49F61D7D620D00731048 /* Result.framework */; };
-		84AA49F91D7D621500731048 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84AA49F81D7D621500731048 /* SwiftyJSON.framework */; };
+		84F49D9C1D8185AB00C02FA2 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F49D9B1D8185AB00C02FA2 /* SnapKit.framework */; };
+		8F86CFF4F17AB15955937093 /* Pods_VideoCaptureTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAFA4B4DA29E56DE4DF20DE9 /* Pods_VideoCaptureTests.framework */; };
+		D9432E0DE2B3C7374636A423 /* Pods_VideoCapture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E5D50FCE6D0E6ECA8B5ED35 /* Pods_VideoCapture.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E5D50FCE6D0E6ECA8B5ED35 /* Pods_VideoCapture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VideoCapture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B05FE599EC6CD213B9DE7DD /* Pods-VideoCaptureTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoCaptureTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VideoCaptureTests/Pods-VideoCaptureTests.debug.xcconfig"; sourceTree = "<group>"; };
+		21DA27FCCE2C5CEBA1C81069 /* Pods-VideoCaptureUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoCaptureUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VideoCaptureUITests/Pods-VideoCaptureUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		42A8D9251D7D2332009C5978 /* VideoCapture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoCapture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42A8D9281D7D2332009C5978 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42A8D92A1D7D2332009C5978 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -67,13 +66,14 @@
 		845521831D7DAE3C00ED2F58 /* VCBaseNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCBaseNavigationViewController.swift; sourceTree = "<group>"; };
 		846628601D7E6CBC0025AED5 /* VCTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCTools.swift; sourceTree = "<group>"; };
 		847ABBB01D7FB1DB00B8CDDE /* VCCamerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCCamerViewController.swift; sourceTree = "<group>"; };
-		847ABBB21D8024D800B8CDDE /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SnapKit.framework; sourceTree = "<group>"; };
-		84AA49EE1D7D618900731048 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
-		84AA49F01D7D619600731048 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ReactiveCocoa.framework; sourceTree = "<group>"; };
-		84AA49F21D7D619D00731048 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
-		84AA49F41D7D620700731048 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
-		84AA49F61D7D620D00731048 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Result.framework; sourceTree = "<group>"; };
-		84AA49F81D7D621500731048 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = "<group>"; };
+		84F49D9B1D8185AB00C02FA2 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = "../../Library/Developer/Xcode/DerivedData/VideoCapture-eabrwqcziugoaudbjckutlccsgxb/Build/Products/Debug-iphonesimulator/SnapKit/SnapKit.framework"; sourceTree = "<group>"; };
+		84F49D9D1D8187D200C02FA2 /* VideoCapture-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VideoCapture-Bridging-Header.h"; sourceTree = "<group>"; };
+		861366B96BA8E4425E995BBE /* Pods_VideoCaptureUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VideoCaptureUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		987AF5B69FBDE2B25CAC8CF7 /* Pods-VideoCapture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoCapture.release.xcconfig"; path = "Pods/Target Support Files/Pods-VideoCapture/Pods-VideoCapture.release.xcconfig"; sourceTree = "<group>"; };
+		9B2E267283782E2B1A48FC93 /* Pods-VideoCaptureTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoCaptureTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VideoCaptureTests/Pods-VideoCaptureTests.release.xcconfig"; sourceTree = "<group>"; };
+		AAFA4B4DA29E56DE4DF20DE9 /* Pods_VideoCaptureTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VideoCaptureTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD03F83D63EDDBEC91E9DA54 /* Pods-VideoCapture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoCapture.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VideoCapture/Pods-VideoCapture.debug.xcconfig"; sourceTree = "<group>"; };
+		D572C26B4A63727B79F73CF1 /* Pods-VideoCaptureUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoCaptureUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VideoCaptureUITests/Pods-VideoCaptureUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +81,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				847ABBB31D8024D900B8CDDE /* SnapKit.framework in Frameworks */,
+				84F49D9C1D8185AB00C02FA2 /* SnapKit.framework in Frameworks */,
+				D9432E0DE2B3C7374636A423 /* Pods_VideoCapture.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,13 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84AA49F31D7D619D00731048 /* Realm.framework in Frameworks */,
-				84AA49EF1D7D618900731048 /* Alamofire.framework in Frameworks */,
-				84AA49F91D7D621500731048 /* SwiftyJSON.framework in Frameworks */,
-				847ABBB41D8024D900B8CDDE /* SnapKit.framework in Frameworks */,
-				84AA49F71D7D620D00731048 /* Result.framework in Frameworks */,
-				84AA49F51D7D620700731048 /* RealmSwift.framework in Frameworks */,
-				84AA49F11D7D619600731048 /* ReactiveCocoa.framework in Frameworks */,
+				8F86CFF4F17AB15955937093 /* Pods_VideoCaptureTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				376636C56ACEEA8585B9616E /* Pods_VideoCaptureUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +112,8 @@
 				42A8D93E1D7D2332009C5978 /* VideoCaptureTests */,
 				42A8D9491D7D2332009C5978 /* VideoCaptureUITests */,
 				42A8D9261D7D2332009C5978 /* Products */,
+				FED73AE9653FF9D6CC110C8B /* Pods */,
+				6859D81CFE39A2123E3036E9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -148,7 +146,6 @@
 		42A8D93E1D7D2332009C5978 /* VideoCaptureTests */ = {
 			isa = PBXGroup;
 			children = (
-				84AA49ED1D7D616100731048 /* framework */,
 				42A8D93F1D7D2332009C5978 /* VideoCaptureTests.swift */,
 				42A8D9411D7D2332009C5978 /* Info.plist */,
 			);
@@ -162,6 +159,17 @@
 				42A8D94C1D7D2332009C5978 /* Info.plist */,
 			);
 			path = VideoCaptureUITests;
+			sourceTree = "<group>";
+		};
+		6859D81CFE39A2123E3036E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84F49D9B1D8185AB00C02FA2 /* SnapKit.framework */,
+				0E5D50FCE6D0E6ECA8B5ED35 /* Pods_VideoCapture.framework */,
+				AAFA4B4DA29E56DE4DF20DE9 /* Pods_VideoCaptureTests.framework */,
+				861366B96BA8E4425E995BBE /* Pods_VideoCaptureUITests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		8455217E1D7DAC0100ED2F58 /* ViewControllers */ = {
@@ -180,24 +188,23 @@
 			isa = PBXGroup;
 			children = (
 				846628601D7E6CBC0025AED5 /* VCTools.swift */,
+				84F49D9D1D8187D200C02FA2 /* VideoCapture-Bridging-Header.h */,
 			);
 			name = VCTools;
 			path = VCTools/VCTools;
 			sourceTree = "<group>";
 		};
-		84AA49ED1D7D616100731048 /* framework */ = {
+		FED73AE9653FF9D6CC110C8B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				847ABBB21D8024D800B8CDDE /* SnapKit.framework */,
-				84AA49F81D7D621500731048 /* SwiftyJSON.framework */,
-				84AA49F61D7D620D00731048 /* Result.framework */,
-				84AA49F41D7D620700731048 /* RealmSwift.framework */,
-				84AA49F21D7D619D00731048 /* Realm.framework */,
-				84AA49F01D7D619600731048 /* ReactiveCocoa.framework */,
-				84AA49EE1D7D618900731048 /* Alamofire.framework */,
+				BD03F83D63EDDBEC91E9DA54 /* Pods-VideoCapture.debug.xcconfig */,
+				987AF5B69FBDE2B25CAC8CF7 /* Pods-VideoCapture.release.xcconfig */,
+				1B05FE599EC6CD213B9DE7DD /* Pods-VideoCaptureTests.debug.xcconfig */,
+				9B2E267283782E2B1A48FC93 /* Pods-VideoCaptureTests.release.xcconfig */,
+				21DA27FCCE2C5CEBA1C81069 /* Pods-VideoCaptureUITests.debug.xcconfig */,
+				D572C26B4A63727B79F73CF1 /* Pods-VideoCaptureUITests.release.xcconfig */,
 			);
-			name = framework;
-			path = framework/framework;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,9 +214,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 42A8D94F1D7D2332009C5978 /* Build configuration list for PBXNativeTarget "VideoCapture" */;
 			buildPhases = (
+				CD77AE5FA24D255CB588B984 /* 📦 Check Pods Manifest.lock */,
 				42A8D9211D7D2332009C5978 /* Sources */,
 				42A8D9221D7D2332009C5978 /* Frameworks */,
 				42A8D9231D7D2332009C5978 /* Resources */,
+				900CB673ADE69DD6C569F43B /* 📦 Embed Pods Frameworks */,
+				63EBE8FC4D18E0650CF91282 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -224,9 +234,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 42A8D9521D7D2332009C5978 /* Build configuration list for PBXNativeTarget "VideoCaptureTests" */;
 			buildPhases = (
+				3A488436723020A8114F78BC /* 📦 Check Pods Manifest.lock */,
 				42A8D9371D7D2332009C5978 /* Sources */,
 				42A8D9381D7D2332009C5978 /* Frameworks */,
 				42A8D9391D7D2332009C5978 /* Resources */,
+				8865A9824751BC727B04715B /* 📦 Embed Pods Frameworks */,
+				4371E2F81B986992042A1D9B /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -242,9 +255,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 42A8D9551D7D2332009C5978 /* Build configuration list for PBXNativeTarget "VideoCaptureUITests" */;
 			buildPhases = (
+				3F5CF723E8150098ED6FB618 /* 📦 Check Pods Manifest.lock */,
 				42A8D9421D7D2332009C5978 /* Sources */,
 				42A8D9431D7D2332009C5978 /* Frameworks */,
 				42A8D9441D7D2332009C5978 /* Resources */,
+				71311EC20CA7D8CEAD7AC6A9 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -325,6 +340,129 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3A488436723020A8114F78BC /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3F5CF723E8150098ED6FB618 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4371E2F81B986992042A1D9B /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VideoCaptureTests/Pods-VideoCaptureTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63EBE8FC4D18E0650CF91282 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VideoCapture/Pods-VideoCapture-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71311EC20CA7D8CEAD7AC6A9 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VideoCaptureUITests/Pods-VideoCaptureUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8865A9824751BC727B04715B /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VideoCaptureTests/Pods-VideoCaptureTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		900CB673ADE69DD6C569F43B /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VideoCapture/Pods-VideoCapture-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD77AE5FA24D255CB588B984 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		42A8D9211D7D2332009C5978 /* Sources */ = {
@@ -478,41 +616,52 @@
 		};
 		42A8D9501D7D2332009C5978 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD03F83D63EDDBEC91E9DA54 /* Pods-VideoCapture.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/VideoCaptureTests/framework/framework",
+					"$(SRCROOT)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = VideoCapture/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.VideoCapture;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "VideoCapture/VCTools/VCTools/VideoCapture-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		42A8D9511D7D2332009C5978 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 987AF5B69FBDE2B25CAC8CF7 /* Pods-VideoCapture.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/VideoCaptureTests/framework/framework",
+					"$(SRCROOT)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = VideoCapture/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.VideoCapture;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "VideoCapture/VCTools/VCTools/VideoCapture-Bridging-Header.h";
 			};
 			name = Release;
 		};
 		42A8D9531D7D2332009C5978 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B05FE599EC6CD213B9DE7DD /* Pods-VideoCaptureTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/VideoCaptureTests/framework/framework",
+					"$(PROJECT_DIR)/VideoCaptureTests/framework",
 				);
 				INFOPLIST_FILE = VideoCaptureTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -524,11 +673,13 @@
 		};
 		42A8D9541D7D2332009C5978 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B2E267283782E2B1A48FC93 /* Pods-VideoCaptureTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/VideoCaptureTests/framework/framework",
+					"$(PROJECT_DIR)/VideoCaptureTests/framework",
 				);
 				INFOPLIST_FILE = VideoCaptureTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -540,6 +691,7 @@
 		};
 		42A8D9561D7D2332009C5978 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21DA27FCCE2C5CEBA1C81069 /* Pods-VideoCaptureUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = VideoCaptureUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -551,6 +703,7 @@
 		};
 		42A8D9571D7D2332009C5978 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D572C26B4A63727B79F73CF1 /* Pods-VideoCaptureUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = VideoCaptureUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

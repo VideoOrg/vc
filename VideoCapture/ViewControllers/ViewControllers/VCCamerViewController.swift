@@ -7,12 +7,14 @@
 //
 
 import UIKit
+//import snapKit
 
 class VCCamerViewController: UIViewController {
     var capView = UIView()
     var returnButton = UIButton()
     var startOrSTopButton = UIButton()
-
+    var finishViedoButon = UIButton()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,9 +34,32 @@ class VCCamerViewController: UIViewController {
         self.startOrSTopButton = UIButton(frame:CGRectMake(150,SWIDTH+50,100,100))
         self.startOrSTopButton .setTitle("开始", forState: UIControlState.Normal)
         self.startOrSTopButton .setTitle("暂定", forState: UIControlState.Selected)
+        self.startOrSTopButton .addTarget(self, action: #selector(startOrSTopTag(_:)), forControlEvents: .TouchDragInside)
         view .addSubview(self.startOrSTopButton)
 
+        self.finishViedoButon = UIButton(frame:CGRectMake(150,SWIDTH+50,100,100))
+        self.finishViedoButon .setTitle("结束", forState: UIControlState.Normal)
+        self.finishViedoButon .addTarget(self, action: #selector(finishViedoTag(_:)), forControlEvents: .TouchDragInside)
+        view .addSubview(self.startOrSTopButton)
         
+        
+        self.returnButton.snp_makeConstraints { make in
+            make.top.equalTo(self.capView.snp_bottom).offset(20.0)
+            make.left.equalTo(view.snp_left).offset(20.0)
+            make.size.equalTo(CGSizeMake(100.0, 100.0))
+        }
+        
+//        self.startOrSTopButton.snp_makeConstraints { make in
+//            make.top.equalTo(self.capView.snp_bottom).offset(20.0)
+//            make.left.equalTo(self.returnButton.snp_right).offset(20.0)
+//            make.size.equalTo(CGSizeMake(100.0, 100.0))
+//        }
+//        
+//        self.finishViedoButon.snp_makeConstraints { make in
+//            make.top.equalTo(self.capView.snp_bottom).offset(20.0)
+//            make.left.equalTo(self.startOrSTopButton.snp_right).offset(20.0)
+//            make.size.equalTo(CGSizeMake(100.0, 100.0))
+//        }
         
         // Do any additional setup after loading the view.
     }
@@ -57,6 +82,15 @@ class VCCamerViewController: UIViewController {
     }
     
     func returnTag(button:UIButton) {
+        
+    }
+    
+    func startOrSTopTag(button:UIButton) {
+        
+    }
+    
+    
+    func finishViedoTag(button:UIButton) {
         
     }
     

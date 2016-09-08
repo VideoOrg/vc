@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "F6A6BFFD467FB7AD9AC32BC505C9337620EF431E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "5241BE9FD87261FC2DA95EDD1C14E7F5965EBBB9" : 0,
+    "F6A6BFFD467FB7AD9AC32BC505C9337620EF431E" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "47D2F4E4-7041-4A03-B4DB-1D383F51AFED",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "5241BE9FD87261FC2DA95EDD1C14E7F5965EBBB9" : "live\/",
+    "F6A6BFFD467FB7AD9AC32BC505C9337620EF431E" : "vc\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "VideoCapture",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "VideoCapture.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "git.yixia.com:YIXIAInnovationGroup\/yxlivevideoapp.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5241BE9FD87261FC2DA95EDD1C14E7F5965EBBB9"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:VideoOrg\/vc.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F6A6BFFD467FB7AD9AC32BC505C9337620EF431E"
+    }
+  ]
+}
