@@ -11,26 +11,29 @@ import UIKit
 class VCCamerViewController: UIViewController {
     var capView = UIView()
     var returnButton = UIButton()
-    
+    var startOrSTopButton = UIButton()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "拍摄"
         self.view.backgroundColor = VCBaseViewColor()
-//        let rightButton = UIButton(frame: CGRectMake(0, 0, 44, 44))
-//        rightButton.setTitle("拍摄", forState: UIControlState.Normal)
-//        //rightButton.addTarget(self, action: #selector(rightButtonClick(_:)), forControlEvents: .TouchUpInside)
-//        rightButton.tag = 101
-//        rightButton.addTarget(self, action: #selector(righTag(_:)), forControlEvents: .TouchUpInside)
-//        
-//        let item2=UIBarButtonItem(customView: rightButton)
-//        self.navigationItem.rightBarButtonItem = item2
+        
         self.capView = UIView(frame: CGRectMake(0, 20, SWIDTH, SWIDTH))
         capView.backgroundColor = UIColor.redColor()
         view .addSubview(self.capView)
         
         
-        self.returnButton = UIButton(frame: CGRectMake(0, 0, 44, 44))
+        self.returnButton = UIButton(frame: CGRectMake(0, SWIDTH+30+20, 44, 44))
+        self.returnButton .setTitle("返回", forState: UIControlState.Normal)
+        self.returnButton .addTarget(self, action: #selector(returnTag(_:)), forControlEvents: .TouchDragInside)
+        view .addSubview(self.returnButton)
+        
+        self.startOrSTopButton = UIButton(frame:CGRectMake(150,SWIDTH+50,100,100))
+        self.startOrSTopButton .setTitle("开始", forState: UIControlState.Normal)
+        self.startOrSTopButton .setTitle("暂定", forState: UIControlState.Selected)
+        view .addSubview(self.startOrSTopButton)
+
         
         
         // Do any additional setup after loading the view.
@@ -53,9 +56,10 @@ class VCCamerViewController: UIViewController {
         
     }
     
-    func righTag(button: UIButton) {
+    func returnTag(button:UIButton) {
         
     }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
