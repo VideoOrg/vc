@@ -1,6 +1,0 @@
-framework module Pods_VideoCaptureTests {
-  umbrella header "Pods-VideoCaptureTests-umbrella.h"
-
-  export *
-  module * { export * }
-}
