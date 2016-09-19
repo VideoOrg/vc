@@ -8,8 +8,9 @@
 
 import UIKit
 
-class VCHomeViewController: UIViewController {
-
+class VCHomeViewController: UIViewController  ,UICollectionViewDelegate,UICollectionViewDataSource{
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "拍一下"
@@ -26,10 +27,126 @@ class VCHomeViewController: UIViewController {
         let item2=UIBarButtonItem(customView: rightButton)
         self.navigationItem.rightBarButtonItem = item2
         
-        // Do any additional setup after loading the view.
+        
+        self.automaticallyAdjustsScrollViewInsets = false
+        // 1.自定义 Item 的FlowLayout
+        
+        
+        let flowLayout = UICollectionViewFlowLayout()
+        
+        // 2.设置 Item 的 Size
+        flowLayout.itemSize = CGSize(width: (SWIDTH-2)/2 , height:  (SWIDTH-2)/2)
+        
+        // 3.设置 Item 的排列方式
+        flowLayout.scrollDirection = UICollectionViewScrollDirection.vertical
+        
+        // 4.设置 Item 的四周边距
+        flowLayout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        
+        // 5.设置同一竖中上下相邻的两个 Item 之间的间距
+        flowLayout.minimumLineSpacing = CGFloat(integerLiteral: 1)
+//        
+//        // 6.设置同一行中相邻的两个 Item 之间的间距
+        flowLayout.minimumInteritemSpacing = CGFloat(integerLiteral: 1)
+        
+        // 7.设置UICollectionView 的页头尺寸
+        //flowLayout.headerReferenceSize = CGSize(width:100,height: 50)
+        
+        // 8.设置 UICollectionView 的页尾尺寸
+       // flowLayout.footerReferenceSize = CGSize(width:100, height: 50)
+        
+        
+        // 1.自定义 UICollectionView 的位置大小, 以及 Item 的显示样式为 flowLayout
+        let collection = UICollectionView(frame: CGRect(x:0,y: 64, width:self.view.frame.width,  height:self.view.frame.height), collectionViewLayout: flowLayout)
+        
+        // 2.设置 UICollectionView 的背景颜色
+        collection.backgroundColor = UIColor.white
+        
+        // 3.设置 UICollectionView 垂直滚动是否滚到 Item 的最底部内容
+        collection.alwaysBounceVertical = true
+        
+        // 4.设置 UICollectionView 垂直滚动是否滚到 Item 的最右边内容
+       // collection.alwaysBounceHorizontal = true
+        
+        // 5.设置 UICollectionView 的数据源对象
+        collection.dataSource = self
+        
+        // 6.设置 UICollectionView 的代理对象
+        collection.delegate = self
+        
+    
+        // 7.设置 UICollectionView 的单元格点击(默认是 true)
+        collection.allowsSelection = true
+        
+        // 8.设置 UICollectionView 的单元格多选(默认是 false)
+        collection.allowsMultipleSelection = false
+        
+        // 9.开启 UICollectionView 的分页显示效果
+        collection.isPagingEnabled = true
+        
+        // 10.注册 UICollectionViewCell
+        collection.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
+        // 11.添加到 self.view 上
+        self.view.addSubview(collection)        // Do any additional setup after loading the view.
+        
+        
     }
 
+
     
+    // 1.该方法是用来设置返回 CollectionViewCell 的组数
+    //private func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+      //  return 1
+    //}
+    
+    // 2.该方法是用来设置返回 CollectionViewCell 的个数
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 60
+    }
+    
+    // 3.该方法是用来设置 CollectionViewCell 的内容
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let collectionCell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath as IndexPath) 
+        collectionCell.backgroundColor = UIColor.red
+        
+        return collectionCell
+    }
+    
+    // 4.该方法是点击了 CollectionViewCell 时调用的监听方法
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    
+    }
+    
+    // 5.该方法是用来设置 CollectionViewCell 的大小
+    private func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        return CGSize(width:  (SWIDTH-2)/2, height:  (SWIDTH-2)/2)
+    }
+    
+    // 6.该方法是用来设置 CollectionViewCell 四周的边距
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
+        return UIEdgeInsetsMake(0, 0, 0, 0)
+    }
+    
+    // 7.该方法是用来设置同一行 CollectionViewCell 之间的间距
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAtIndex section: Int) -> CGFloat {
+        return 1
+    }
+    
+    // 8.该方法是用来设置同一列 CollectionViewCell 之间的间距
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAtIndex section: Int) -> CGFloat {
+        return 1
+    }
+    
+    // 9.该方法是用来设置 CollectionView 的页头尺寸
+//    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+//        return CGSize(width: 100, height: 100)
+//    }
+//    
+//    // 10.该方法是用来设置 CollectionView 的页尾尺寸
+//    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection section: Int) -> CGSize {
+//        return CGSize(width: 100, height: 100)
+//    }
+
     
     func rightButtonClick(button: UIButton) {
         let seeAllVC = VCCamerViewController()

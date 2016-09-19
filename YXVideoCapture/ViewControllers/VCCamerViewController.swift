@@ -9,8 +9,11 @@
 import UIKit
 //import snapKit
 
+
 class VCCamerViewController: UIViewController {
+    var topView  = UIView()
     var capView = UIView()
+    var topCameRotateButton = UIButton()
     var returnButton = UIButton()
     var startOrSTopButton = UIButton()
     var finishViedoButon = UIButton()
@@ -20,23 +23,36 @@ class VCCamerViewController: UIViewController {
         super.viewDidLoad()
         self.view.backgroundColor = VCBaseViewColor()
         
-        self.capView = UIView(frame: CGRect(x: 0, y: 20, width: SWIDTH, height: SWIDTH))
+        self.topView = UIView(frame: CGRect(x: 0, y: 20, width: SWIDTH, height: 44))
+        self.topView.backgroundColor = UIColor.white
+        view .addSubview(self.topView)
+        
+        self.topCameRotateButton = UIButton(frame: CGRect(x: SWIDTH - 44, y:0, width:44, height:44))
+        self.topCameRotateButton .setImage(UIImage.init(named: "YXCameRotate"), for: .normal)
+        self.topCameRotateButton .setTitleColor(UIColor.black, for: .normal)
+        self.topCameRotateButton .addTarget(self, action: #selector(topCameRotateButTag), for: .touchUpInside)
+        self.topView .addSubview(self.topCameRotateButton)
+
+        
+        
+        
+        self.capView = UIView(frame: CGRect(x: 0, y: 64, width: SWIDTH, height: SWIDTH))
         capView.backgroundColor = UIColor.red
         view .addSubview(self.capView)
         
         
-        self.returnButton = UIButton(frame: CGRect(x:0, y:SWIDTH+30+20, width:44, height:44))
+        self.returnButton = UIButton(frame: CGRect(x:0, y:SWIDTH+30+20+44, width:44, height:44))
         self.returnButton .setImage(UIImage.init(named: "YXCameClose"), for: .normal)
         self.returnButton .setTitleColor(UIColor.black, for: .normal)
         self.returnButton .addTarget(self, action: #selector(returnTag), for: .touchUpInside)
         view .addSubview(self.returnButton)
         
-        self.startOrSTopButton = UIButton(frame:CGRect(x:150, y:SWIDTH+50, width:82, height:82))
+        self.startOrSTopButton = UIButton(frame:CGRect(x:150, y:SWIDTH+50+44, width:82, height:82))
         self.startOrSTopButton .setImage(UIImage.init(named: "YXCameStart"), for: .normal)
         self.startOrSTopButton .addTarget(self, action: #selector(startOrSTopTag), for: .touchUpInside)
         view .addSubview(self.startOrSTopButton)
 
-        self.finishViedoButon = UIButton(frame:CGRect(x:300, y:SWIDTH+50, width:64, height:64))
+        self.finishViedoButon = UIButton(frame:CGRect(x:300, y:SWIDTH+50+44, width:64, height:64))
         self.finishViedoButon .setImage(UIImage.init(named: "YXCameFinish"), for: .normal)
         self.finishViedoButon .addTarget(self, action: #selector(finishViedoTag), for: .touchUpInside)
         view .addSubview(self.finishViedoButon)
@@ -80,8 +96,12 @@ class VCCamerViewController: UIViewController {
         
     }
     
+    func topCameRotateButTag(button:UIButton) {
+        
+    }
+    
     func returnTag(button:UIButton) {
-        navigationController?.popViewController(animated: true)
+      let _ =  navigationController?.popViewController(animated: false)
     }
     
     func startOrSTopTag(button:UIButton) {
