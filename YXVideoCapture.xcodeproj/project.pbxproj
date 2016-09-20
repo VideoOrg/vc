@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8423C6CF1D90D7DB005CCCC9 /* YXBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8423C6CE1D90D7DB005CCCC9 /* YXBaseViewController.swift */; };
+		843C7C331D90345000FD8244 /* VCVideoPreviewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843C7C321D90345000FD8244 /* VCVideoPreviewsViewController.swift */; };
 		84697D971D8E885A0055656A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84697D961D8E885A0055656A /* AppDelegate.swift */; };
 		84697D991D8E885A0055656A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84697D981D8E885A0055656A /* ViewController.swift */; };
 		84697D9C1D8E885A0055656A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84697D9A1D8E885A0055656A /* Main.storyboard */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8423C6CE1D90D7DB005CCCC9 /* YXBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YXBaseViewController.swift; sourceTree = "<group>"; };
+		843C7C321D90345000FD8244 /* VCVideoPreviewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCVideoPreviewsViewController.swift; sourceTree = "<group>"; };
 		84697D931D8E885A0055656A /* YXVideoCapture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YXVideoCapture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84697D961D8E885A0055656A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84697D981D8E885A0055656A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +88,8 @@
 				84697DAA1D8E888B0055656A /* VCCamerViewController.swift */,
 				84697DAB1D8E888B0055656A /* VCHomeViewController.swift */,
 				84697DAC1D8E888B0055656A /* VCTabBarController.swift */,
+				843C7C321D90345000FD8244 /* VCVideoPreviewsViewController.swift */,
+				8423C6CE1D90D7DB005CCCC9 /* YXBaseViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -171,6 +177,8 @@
 			files = (
 				84697DB41D8E889E0055656A /* VCTools.swift in Sources */,
 				84697DAF1D8E888B0055656A /* VCHomeViewController.swift in Sources */,
+				8423C6CF1D90D7DB005CCCC9 /* YXBaseViewController.swift in Sources */,
+				843C7C331D90345000FD8244 /* VCVideoPreviewsViewController.swift in Sources */,
 				84697D991D8E885A0055656A /* ViewController.swift in Sources */,
 				84697DAD1D8E888B0055656A /* VCBaseNavigationViewController.swift in Sources */,
 				84697DAE1D8E888B0055656A /* VCCamerViewController.swift in Sources */,
@@ -337,6 +345,7 @@
 				84697DA71D8E885A0055656A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

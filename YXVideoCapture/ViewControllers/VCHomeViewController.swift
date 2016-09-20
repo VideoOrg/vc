@@ -114,7 +114,8 @@ class VCHomeViewController: UIViewController  ,UICollectionViewDelegate,UICollec
     
     // 4.该方法是点击了 CollectionViewCell 时调用的监听方法
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-    
+        let videoPreviews = VCVideoPreviewsViewController()
+        navigationController?.pushViewController(videoPreviews, animated: false)
     }
     
     // 5.该方法是用来设置 CollectionViewCell 的大小
@@ -150,7 +151,7 @@ class VCHomeViewController: UIViewController  ,UICollectionViewDelegate,UICollec
     
     func rightButtonClick(button: UIButton) {
         let seeAllVC = VCCamerViewController()
-        navigationController?.pushViewController(seeAllVC, animated: true)
+        navigationController?.pushViewController(seeAllVC, animated: false)
     }
     
     
