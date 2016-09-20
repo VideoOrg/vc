@@ -41,7 +41,7 @@ class VCCamerViewController: UIViewController {
         view .addSubview(self.capView)
         
         
-        self.returnButton = UIButton(frame: CGRect(x:0, y:SWIDTH+30+20+44, width:44, height:44))
+        self.returnButton = UIButton(frame: CGRect(x:0, y:SWIDTH+30+20+44, width:64, height:64))
         self.returnButton .setImage(UIImage.init(named: "YXCameClose"), for: .normal)
         self.returnButton .setTitleColor(UIColor.black, for: .normal)
         self.returnButton .addTarget(self, action: #selector(returnTag), for: .touchUpInside)
