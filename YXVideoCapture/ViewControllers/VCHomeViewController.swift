@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Kingfisher
 class VCHomeViewController: UIViewController  ,UICollectionViewDelegate,UICollectionViewDataSource{
     
     
@@ -85,7 +85,7 @@ class VCHomeViewController: UIViewController  ,UICollectionViewDelegate,UICollec
         collection.isPagingEnabled = true
         
         // 10.注册 UICollectionViewCell
-        collection.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
+        collection.register(YXHomeCollectionViewCell.self, forCellWithReuseIdentifier: "collectionViewCell")
         // 11.添加到 self.view 上
         self.view.addSubview(collection)        // Do any additional setup after loading the view.
         
@@ -106,9 +106,10 @@ class VCHomeViewController: UIViewController  ,UICollectionViewDelegate,UICollec
     
     // 3.该方法是用来设置 CollectionViewCell 的内容
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let collectionCell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath as IndexPath) 
-        collectionCell.backgroundColor = UIColor.red
+        let collectionCell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionViewCell", for: indexPath as IndexPath) as! YXHomeCollectionViewCell
         
+        let imageR = ImageResource(downloadURL: URL(string: "http://pic26.nipic.com/20121217/9252150_110558501000_2.jpg")!)
+        collectionCell.imgView?.kf_setImage(with: imageR)
         return collectionCell
     }
     
@@ -172,3 +173,4 @@ class VCHomeViewController: UIViewController  ,UICollectionViewDelegate,UICollec
     */
 
 }
+
