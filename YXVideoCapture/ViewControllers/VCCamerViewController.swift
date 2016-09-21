@@ -35,7 +35,6 @@ class VCCamerViewController: UIViewController {
 
         
         
-        
         self.capView = UIView(frame: CGRect(x: 0, y: 64, width: SWIDTH, height: SWIDTH))
         capView.backgroundColor = UIColor.red
         view .addSubview(self.capView)
