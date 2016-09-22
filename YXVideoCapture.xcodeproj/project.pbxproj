@@ -21,6 +21,17 @@
 		84697DAF1D8E888B0055656A /* VCHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84697DAB1D8E888B0055656A /* VCHomeViewController.swift */; };
 		84697DB01D8E888B0055656A /* VCTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84697DAC1D8E888B0055656A /* VCTabBarController.swift */; };
 		84697DB41D8E889E0055656A /* VCTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84697DB21D8E889E0055656A /* VCTools.swift */; };
+		8493DB871D92C06200AEA892 /* test.m in Sources */ = {isa = PBXBuildFile; fileRef = 8493DB861D92C06200AEA892 /* test.m */; };
+		8493DB891D92C1B200AEA892 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8493DB881D92C1B200AEA892 /* CoreLocation.framework */; };
+		8493DB8B1D92C1BC00AEA892 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8493DB8A1D92C1BC00AEA892 /* Security.framework */; };
+		8493DB8D1D92C1C800AEA892 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8493DB8C1D92C1C800AEA892 /* CoreGraphics.framework */; };
+		8493DB8F1D92C1D800AEA892 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8493DB8E1D92C1D800AEA892 /* MobileCoreServices.framework */; };
+		8493DB911D92C1E800AEA892 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8493DB901D92C1E800AEA892 /* CFNetwork.framework */; };
+		8493DB931D92C20200AEA892 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8493DB921D92C20200AEA892 /* CoreTelephony.framework */; };
+		8493DB951D92C21600AEA892 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8493DB941D92C21600AEA892 /* SystemConfiguration.framework */; };
+		8493DB971D92C22600AEA892 /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8493DB961D92C22600AEA892 /* libz.1.2.5.tbd */; };
+		8493DB991D92C23A00AEA892 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8493DB981D92C23A00AEA892 /* libicucore.tbd */; };
+		8493DB9B1D92C24F00AEA892 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8493DB9A1D92C24F00AEA892 /* libsqlite3.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,7 +51,19 @@
 		84697DAB1D8E888B0055656A /* VCHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCHomeViewController.swift; sourceTree = "<group>"; };
 		84697DAC1D8E888B0055656A /* VCTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCTabBarController.swift; sourceTree = "<group>"; };
 		84697DB21D8E889E0055656A /* VCTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCTools.swift; sourceTree = "<group>"; };
-		84697DB31D8E889E0055656A /* VideoCapture-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VideoCapture-Bridging-Header.h"; sourceTree = "<group>"; };
+		8493DB841D92C06200AEA892 /* YXVideoCapture-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YXVideoCapture-Bridging-Header.h"; sourceTree = "<group>"; };
+		8493DB851D92C06200AEA892 /* test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = test.h; sourceTree = "<group>"; };
+		8493DB861D92C06200AEA892 /* test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = test.m; sourceTree = "<group>"; };
+		8493DB881D92C1B200AEA892 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		8493DB8A1D92C1BC00AEA892 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		8493DB8C1D92C1C800AEA892 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8493DB8E1D92C1D800AEA892 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		8493DB901D92C1E800AEA892 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		8493DB921D92C20200AEA892 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		8493DB941D92C21600AEA892 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		8493DB961D92C22600AEA892 /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
+		8493DB981D92C23A00AEA892 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		8493DB9A1D92C24F00AEA892 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		89DBC3451D464B7F10415766 /* Pods-YXVideoCapture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YXVideoCapture.release.xcconfig"; path = "Pods/Target Support Files/Pods-YXVideoCapture/Pods-YXVideoCapture.release.xcconfig"; sourceTree = "<group>"; };
 		B463DA807075BD5028F7737F /* Pods_YXVideoCapture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YXVideoCapture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -50,6 +73,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8493DB9B1D92C24F00AEA892 /* libsqlite3.tbd in Frameworks */,
+				8493DB991D92C23A00AEA892 /* libicucore.tbd in Frameworks */,
+				8493DB971D92C22600AEA892 /* libz.1.2.5.tbd in Frameworks */,
+				8493DB951D92C21600AEA892 /* SystemConfiguration.framework in Frameworks */,
+				8493DB931D92C20200AEA892 /* CoreTelephony.framework in Frameworks */,
+				8493DB911D92C1E800AEA892 /* CFNetwork.framework in Frameworks */,
+				8493DB8F1D92C1D800AEA892 /* MobileCoreServices.framework in Frameworks */,
+				8493DB8D1D92C1C800AEA892 /* CoreGraphics.framework in Frameworks */,
+				8493DB8B1D92C1BC00AEA892 /* Security.framework in Frameworks */,
+				8493DB891D92C1B200AEA892 /* CoreLocation.framework in Frameworks */,
 				2918C33AC2DA7E0014EA3EEC /* Pods_YXVideoCapture.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -60,6 +93,16 @@
 		57217806BD40E3FF5B9C09CF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8493DB9A1D92C24F00AEA892 /* libsqlite3.tbd */,
+				8493DB981D92C23A00AEA892 /* libicucore.tbd */,
+				8493DB961D92C22600AEA892 /* libz.1.2.5.tbd */,
+				8493DB941D92C21600AEA892 /* SystemConfiguration.framework */,
+				8493DB921D92C20200AEA892 /* CoreTelephony.framework */,
+				8493DB901D92C1E800AEA892 /* CFNetwork.framework */,
+				8493DB8E1D92C1D800AEA892 /* MobileCoreServices.framework */,
+				8493DB8C1D92C1C800AEA892 /* CoreGraphics.framework */,
+				8493DB8A1D92C1BC00AEA892 /* Security.framework */,
+				8493DB881D92C1B200AEA892 /* CoreLocation.framework */,
 				B463DA807075BD5028F7737F /* Pods_YXVideoCapture.framework */,
 			);
 			name = Frameworks;
@@ -134,7 +177,9 @@
 			isa = PBXGroup;
 			children = (
 				84697DB21D8E889E0055656A /* VCTools.swift */,
-				84697DB31D8E889E0055656A /* VideoCapture-Bridging-Header.h */,
+				8493DB851D92C06200AEA892 /* test.h */,
+				8493DB861D92C06200AEA892 /* test.m */,
+				8493DB841D92C06200AEA892 /* YXVideoCapture-Bridging-Header.h */,
 			);
 			path = VCTools;
 			sourceTree = "<group>";
@@ -174,6 +219,7 @@
 				TargetAttributes = {
 					84697D921D8E885A0055656A = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -264,6 +310,7 @@
 			files = (
 				84697DB41D8E889E0055656A /* VCTools.swift in Sources */,
 				84697DAF1D8E888B0055656A /* VCHomeViewController.swift in Sources */,
+				8493DB871D92C06200AEA892 /* test.m in Sources */,
 				8423C6CF1D90D7DB005CCCC9 /* YXBaseViewController.swift in Sources */,
 				843C7C331D90345000FD8244 /* VCVideoPreviewsViewController.swift in Sources */,
 				84697D991D8E885A0055656A /* ViewController.swift in Sources */,
@@ -395,10 +442,13 @@
 			baseConfigurationReference = 286398CD637809EF387531B1 /* Pods-YXVideoCapture.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = YXVideoCapture/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SYP.YXVideoCapture;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "YXVideoCapture/VCTools/YXVideoCapture-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -408,10 +458,12 @@
 			baseConfigurationReference = 89DBC3451D464B7F10415766 /* Pods-YXVideoCapture.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = YXVideoCapture/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SYP.YXVideoCapture;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "YXVideoCapture/VCTools/YXVideoCapture-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

@@ -6,6 +6,7 @@ target 'YXVideoCapture' do
   use_frameworks!
 
   pod 'Kingfisher'
+  pod 'BmobSDK'
   # Pods for YXVideoCapture
 
 end
