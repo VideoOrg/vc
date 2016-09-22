@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Photos
 //import snapKit
 
 
@@ -17,7 +18,8 @@ class VCCamerViewController: UIViewController {
     var returnButton = UIButton()
     var startOrSTopButton = UIButton()
     var finishViedoButon = UIButton()
-    
+    var previewView: PreviewView!
+    var cameraController: CameraController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,13 +35,10 @@ class VCCamerViewController: UIViewController {
         self.topCameRotateButton .addTarget(self, action: #selector(topCameRotateButTag), for: .touchUpInside)
         self.topView .addSubview(self.topCameRotateButton)
 
-        
-        
-        
         self.capView = UIView(frame: CGRect(x: 0, y: 64, width: SWIDTH, height: SWIDTH))
-        capView.backgroundColor = UIColor.red
+        capView.backgroundColor = UIColor.clear
         view .addSubview(self.capView)
-        
+        showPreviewLayer()
         
         self.returnButton = UIButton(frame: CGRect(x:0, y:SWIDTH+30+20+44, width:64, height:64))
         self.returnButton .setImage(UIImage.init(named: "YXCameClose"), for: .normal)
@@ -57,31 +56,10 @@ class VCCamerViewController: UIViewController {
         self.finishViedoButon .addTarget(self, action: #selector(finishViedoTag), for: .touchUpInside)
         view .addSubview(self.finishViedoButon)
         
-        
-//        self.returnButton.snp_makeConstraints { make in
-//            make.top.equalTo(self.capView.snp_bottom).offset(20.0)
-//            make.left.equalTo(view.snp_left).offset(20.0)
-//            make.size.equalTo(CGSizeMake(100.0, 100.0))
-//        }
-        
-//        self.startOrSTopButton.snp_makeConstraints { make in
-//            make.top.equalTo(self.capView.snp_bottom).offset(20.0)
-//            make.left.equalTo(self.returnButton.snp_right).offset(20.0)
-//            make.size.equalTo(CGSizeMake(100.0, 100.0))
-//        }
-//        
-//        self.finishViedoButon.snp_makeConstraints { make in
-//            make.top.equalTo(self.capView.snp_bottom).offset(20.0)
-//            make.left.equalTo(self.startOrSTopButton.snp_right).offset(20.0)
-//            make.size.equalTo(CGSizeMake(100.0, 100.0))
-//        }
-        
-        // Do any additional setup after loading the view.
     }
     
     
-    
-    
+
      override  func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: false)
@@ -92,6 +70,23 @@ class VCCamerViewController: UIViewController {
     }
     
     
+    //MARK: - Capture
+    
+    /// show preview
+    func showPreviewLayer() {
+        self.previewView =  PreviewView(frame: self.capView.bounds)
+        self.capView.addSubview(self.previewView)
+        
+         self.cameraController = CameraController()
+        self.cameraController.setupSession()
+        
+        self.previewView.session = self.cameraController.captureSession
+        self.cameraController.startSession()
+    }
+    
+    
+    //MARK: - action
+
     func rightButtonClick(button: UIButton) {
         
     }
@@ -105,9 +100,8 @@ class VCCamerViewController: UIViewController {
     }
     
     func startOrSTopTag(button:UIButton) {
-        
+        self.cameraController.startRecording()
     }
-    
     
     func finishViedoTag(button:UIButton) {
         

@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		2918C33AC2DA7E0014EA3EEC /* Pods_YXVideoCapture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B463DA807075BD5028F7737F /* Pods_YXVideoCapture.framework */; };
+		42AB870F1D9371F7002BC66C /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42AB870E1D9371F7002BC66C /* Photos.framework */; };
+		42AB87111D9377FB002BC66C /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42AB87101D9377FB002BC66C /* AssetsLibrary.framework */; };
+		42C2333F1D9284B500457144 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C2333E1D9284B500457144 /* CameraController.swift */; };
+		42C233411D92852400457144 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C233401D92852400457144 /* PreviewView.swift */; };
+		42C233431D92865400457144 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42C233421D92865400457144 /* AVFoundation.framework */; };
+		42C233451D92865E00457144 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42C233441D92865E00457144 /* AudioToolbox.framework */; };
+		42C233491D92BD8C00457144 /* NSFileManager+THAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C233481D92BD8C00457144 /* NSFileManager+THAdditions.m */; };
 		8423C6CF1D90D7DB005CCCC9 /* YXBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8423C6CE1D90D7DB005CCCC9 /* YXBaseViewController.swift */; };
 		8423C6D21D91561F005CCCC9 /* YXHomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8423C6D11D91561F005CCCC9 /* YXHomeCollectionViewCell.swift */; };
 		843C7C331D90345000FD8244 /* VCVideoPreviewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843C7C321D90345000FD8244 /* VCVideoPreviewsViewController.swift */; };
@@ -25,6 +32,15 @@
 
 /* Begin PBXFileReference section */
 		286398CD637809EF387531B1 /* Pods-YXVideoCapture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YXVideoCapture.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YXVideoCapture/Pods-YXVideoCapture.debug.xcconfig"; sourceTree = "<group>"; };
+		42AB870E1D9371F7002BC66C /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		42AB87101D9377FB002BC66C /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		42C2333E1D9284B500457144 /* CameraController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
+		42C233401D92852400457144 /* PreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
+		42C233421D92865400457144 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		42C233441D92865E00457144 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		42C233461D92BD8B00457144 /* YXVideoCapture-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YXVideoCapture-Bridging-Header.h"; sourceTree = "<group>"; };
+		42C233471D92BD8C00457144 /* NSFileManager+THAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+THAdditions.h"; sourceTree = "<group>"; };
+		42C233481D92BD8C00457144 /* NSFileManager+THAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+THAdditions.m"; sourceTree = "<group>"; };
 		8423C6CE1D90D7DB005CCCC9 /* YXBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YXBaseViewController.swift; sourceTree = "<group>"; };
 		8423C6D11D91561F005CCCC9 /* YXHomeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YXHomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		843C7C321D90345000FD8244 /* VCVideoPreviewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCVideoPreviewsViewController.swift; sourceTree = "<group>"; };
@@ -50,6 +66,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42AB87111D9377FB002BC66C /* AssetsLibrary.framework in Frameworks */,
+				42AB870F1D9371F7002BC66C /* Photos.framework in Frameworks */,
+				42C233451D92865E00457144 /* AudioToolbox.framework in Frameworks */,
+				42C233431D92865400457144 /* AVFoundation.framework in Frameworks */,
 				2918C33AC2DA7E0014EA3EEC /* Pods_YXVideoCapture.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -57,9 +77,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		42C2333D1D9284A500457144 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				42C233471D92BD8C00457144 /* NSFileManager+THAdditions.h */,
+				42C233481D92BD8C00457144 /* NSFileManager+THAdditions.m */,
+				42C233401D92852400457144 /* PreviewView.swift */,
+				42C2333E1D9284B500457144 /* CameraController.swift */,
+				42C233461D92BD8B00457144 /* YXVideoCapture-Bridging-Header.h */,
+			);
+			name = Camera;
+			sourceTree = "<group>";
+		};
 		57217806BD40E3FF5B9C09CF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				42AB87101D9377FB002BC66C /* AssetsLibrary.framework */,
+				42AB870E1D9371F7002BC66C /* Photos.framework */,
+				42C233441D92865E00457144 /* AudioToolbox.framework */,
+				42C233421D92865400457144 /* AVFoundation.framework */,
 				B463DA807075BD5028F7737F /* Pods_YXVideoCapture.framework */,
 			);
 			name = Frameworks;
@@ -104,6 +140,7 @@
 		84697D951D8E885A0055656A /* YXVideoCapture */ = {
 			isa = PBXGroup;
 			children = (
+				42C2333D1D9284A500457144 /* Camera */,
 				8423C6D01D915591005CCCC9 /* VCView */,
 				84697DB11D8E889E0055656A /* VCTools */,
 				84697DA81D8E888B0055656A /* ViewControllers */,
@@ -174,6 +211,8 @@
 				TargetAttributes = {
 					84697D921D8E885A0055656A = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = UXH5SGQJJB;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -267,7 +306,10 @@
 				8423C6CF1D90D7DB005CCCC9 /* YXBaseViewController.swift in Sources */,
 				843C7C331D90345000FD8244 /* VCVideoPreviewsViewController.swift in Sources */,
 				84697D991D8E885A0055656A /* ViewController.swift in Sources */,
+				42C233411D92852400457144 /* PreviewView.swift in Sources */,
 				84697DAD1D8E888B0055656A /* VCBaseNavigationViewController.swift in Sources */,
+				42C233491D92BD8C00457144 /* NSFileManager+THAdditions.m in Sources */,
+				42C2333F1D9284B500457144 /* CameraController.swift in Sources */,
 				8423C6D21D91561F005CCCC9 /* YXHomeCollectionViewCell.swift in Sources */,
 				84697DAE1D8E888B0055656A /* VCCamerViewController.swift in Sources */,
 				84697DB01D8E888B0055656A /* VCTabBarController.swift in Sources */,
@@ -395,11 +437,17 @@
 			baseConfigurationReference = 286398CD637809EF387531B1 /* Pods-YXVideoCapture.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = UXH5SGQJJB;
 				INFOPLIST_FILE = YXVideoCapture/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SYP.YXVideoCapture;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "YXVideoCapture/YXVideoCapture-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -408,11 +456,16 @@
 			baseConfigurationReference = 89DBC3451D464B7F10415766 /* Pods-YXVideoCapture.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = UXH5SGQJJB;
 				INFOPLIST_FILE = YXVideoCapture/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SYP.YXVideoCapture;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "YXVideoCapture/YXVideoCapture-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
