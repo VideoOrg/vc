@@ -5,7 +5,7 @@
 ## Build generated
 build/
 DerivedData/
-
+Pods/
 ## Various settings
 *.pbxuser
 !default.pbxuser
@@ -36,7 +36,7 @@ playground.xcworkspace
 # Add this line if you want to avoid checking in source code from Swift Package Manager dependencies.
 # Packages/
 .build/
-
+.Pod/
 # CocoaPods
 #
 # We recommend against adding the Pods directory to your .gitignore. However

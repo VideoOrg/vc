@@ -57,7 +57,7 @@ class VCHomeViewController: UIViewController  ,UICollectionViewDelegate,UICollec
         
         
         // 1.自定义 UICollectionView 的位置大小, 以及 Item 的显示样式为 flowLayout
-        let collection = UICollectionView(frame: CGRect(x:0,y: 64, width:self.view.frame.width,  height:self.view.frame.height), collectionViewLayout: flowLayout)
+        let collection = UICollectionView(frame: CGRect(x:0,y: 64, width:self.view.frame.width,  height:self.view.frame.height-64), collectionViewLayout: flowLayout)
         
         // 2.设置 UICollectionView 的背景颜色
         collection.backgroundColor = UIColor.white
@@ -107,7 +107,7 @@ class VCHomeViewController: UIViewController  ,UICollectionViewDelegate,UICollec
     // 3.该方法是用来设置 CollectionViewCell 的内容
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let collectionCell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionViewCell", for: indexPath as IndexPath) as! YXHomeCollectionViewCell
-        
+        collectionCell.backgroundColor = UIColor.red
         let imageR = ImageResource(downloadURL: URL(string: "http://pic26.nipic.com/20121217/9252150_110558501000_2.jpg")!)
         collectionCell.imgView?.kf_setImage(with: imageR)
         return collectionCell

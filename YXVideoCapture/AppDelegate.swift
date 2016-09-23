@@ -19,20 +19,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKey()
         
-        let VC = VCHomeViewController()
-        
-        let nav = VCBaseNavigationViewController()
-        nav.addChildViewController(VC)
-        
-        window?.rootViewController = nav;
+//        let VC = VCHomeViewController()
+//        
+//        let nav = VCBaseNavigationViewController()
+//        nav.addChildViewController(VC)
+//        
+//        window?.rootViewController = nav;
 
+        
+        let VC = VCLoginViewContoller()
+        
+//        let nav = VCBaseNavigationViewController()
+//        nav.addChildViewController(VC)
+        
+        window?.rootViewController = VC;
+        
+        
+        
        let appKey = "e9e2b431246dd62689c91263d52522de"
        Bmob.register(withAppKey: appKey)
         
         
         
 //        let gameScore = BmobObject(className: "GameScore")
-//    
 //        gameScore?.setObject("小明", forKey: "name")
 //        gameScore?.setObject("13", forKey: "age")
 //        gameScore?.saveInBackground { (isSuccessful, error) in
