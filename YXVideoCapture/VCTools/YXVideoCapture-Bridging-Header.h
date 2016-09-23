@@ -1,5 +1,13 @@
 //
-//  Use this file to import your target's public headers that you would like to expose to Swift.
+//  YXVideoCapture-Bridging-Header.h
+//  YXVideoCapture
+//
+//  Created by admin on 16/9/22.
+//  Copyright © 2016年 SYP. All rights reserved.
 //
 
-#import <BmobSDK/Bmob.h>
+#ifndef YXVideoCapture_Bridging_Header_h
+#define YXVideoCapture_Bridging_Header_h
+
+
+#endif /* YXVideoCapture_Bridging_Header_h */
