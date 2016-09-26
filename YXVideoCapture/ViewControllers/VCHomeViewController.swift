@@ -90,6 +90,10 @@ class VCHomeViewController: UIViewController  ,UICollectionViewDelegate,UICollec
         self.view.addSubview(collection)        // Do any additional setup after loading the view.
         
         
+       // let  file = obj.objectForKey("file") as? BmobFile
+        
+        
+        
     }
 
 

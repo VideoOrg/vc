@@ -16,9 +16,9 @@
 		42C233451D92865E00457144 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42C233441D92865E00457144 /* AudioToolbox.framework */; };
 		42C233491D92BD8C00457144 /* NSFileManager+THAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C233481D92BD8C00457144 /* NSFileManager+THAdditions.m */; };
 		8423C6CF1D90D7DB005CCCC9 /* YXBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8423C6CE1D90D7DB005CCCC9 /* YXBaseViewController.swift */; };
+		842D81CB1D9518F0001CD49D /* VCAVPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842D81CA1D9518F0001CD49D /* VCAVPlayerView.swift */; };
 		843C7C331D90345000FD8244 /* VCVideoPreviewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843C7C321D90345000FD8244 /* VCVideoPreviewsViewController.swift */; };
 		843FC47F1D938CAF00AF61C3 /* YXHomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843FC47E1D938CAF00AF61C3 /* YXHomeCollectionViewCell.swift */; };
-		844D71EA1D93FF6500341A1A /* 日记.txt in Resources */ = {isa = PBXBuildFile; fileRef = 844D71E91D93FF6500341A1A /* 日记.txt */; };
 		84697D971D8E885A0055656A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84697D961D8E885A0055656A /* AppDelegate.swift */; };
 		84697D9C1D8E885A0055656A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84697D9A1D8E885A0055656A /* Main.storyboard */; };
 		84697D9E1D8E885A0055656A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84697D9D1D8E885A0055656A /* Assets.xcassets */; };
@@ -28,7 +28,6 @@
 		84697DAF1D8E888B0055656A /* VCHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84697DAB1D8E888B0055656A /* VCHomeViewController.swift */; };
 		84697DB01D8E888B0055656A /* VCTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84697DAC1D8E888B0055656A /* VCTabBarController.swift */; };
 		84697DB41D8E889E0055656A /* VCTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84697DB21D8E889E0055656A /* VCTools.swift */; };
-		848E8BD91D94C6E400BE9B90 /* temp.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 848E8BD81D94C6E400BE9B90 /* temp.mp4 */; };
 		848E8BDE1D94CAFB00BE9B90 /* VCLoginViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848E8BDD1D94CAFB00BE9B90 /* VCLoginViewContoller.swift */; };
 		8493DB891D92C1B200AEA892 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8493DB881D92C1B200AEA892 /* CoreLocation.framework */; };
 		8493DB8B1D92C1BC00AEA892 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8493DB8A1D92C1BC00AEA892 /* Security.framework */; };
@@ -40,6 +39,7 @@
 		8493DB971D92C22600AEA892 /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8493DB961D92C22600AEA892 /* libz.1.2.5.tbd */; };
 		8493DB991D92C23A00AEA892 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8493DB981D92C23A00AEA892 /* libicucore.tbd */; };
 		8493DB9B1D92C24F00AEA892 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8493DB9A1D92C24F00AEA892 /* libsqlite3.tbd */; };
+		84A27D5F1D9786D700D85EF2 /* VCSignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A27D5E1D9786D700D85EF2 /* VCSignInViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,10 +53,10 @@
 		42C233471D92BD8C00457144 /* NSFileManager+THAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+THAdditions.h"; sourceTree = "<group>"; };
 		42C233481D92BD8C00457144 /* NSFileManager+THAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+THAdditions.m"; sourceTree = "<group>"; };
 		8423C6CE1D90D7DB005CCCC9 /* YXBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YXBaseViewController.swift; sourceTree = "<group>"; };
+		842D81CA1D9518F0001CD49D /* VCAVPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCAVPlayerView.swift; sourceTree = "<group>"; };
 		843C7C321D90345000FD8244 /* VCVideoPreviewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCVideoPreviewsViewController.swift; sourceTree = "<group>"; };
 		843FC47E1D938CAF00AF61C3 /* YXHomeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YXHomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		843FC4861D938F7000AF61C3 /* YXVideoCapture-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YXVideoCapture-Bridging-Header.h"; sourceTree = "<group>"; };
-		844D71E91D93FF6500341A1A /* 日记.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "日记.txt"; sourceTree = "<group>"; };
 		84697D931D8E885A0055656A /* YXVideoCapture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YXVideoCapture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84697D961D8E885A0055656A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84697D9B1D8E885A0055656A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -68,7 +68,6 @@
 		84697DAB1D8E888B0055656A /* VCHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCHomeViewController.swift; sourceTree = "<group>"; };
 		84697DAC1D8E888B0055656A /* VCTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCTabBarController.swift; sourceTree = "<group>"; };
 		84697DB21D8E889E0055656A /* VCTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCTools.swift; sourceTree = "<group>"; };
-		848E8BD81D94C6E400BE9B90 /* temp.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = temp.mp4; sourceTree = "<group>"; };
 		848E8BDD1D94CAFB00BE9B90 /* VCLoginViewContoller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCLoginViewContoller.swift; sourceTree = "<group>"; };
 		8493DB881D92C1B200AEA892 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		8493DB8A1D92C1BC00AEA892 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -80,6 +79,7 @@
 		8493DB961D92C22600AEA892 /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
 		8493DB981D92C23A00AEA892 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
 		8493DB9A1D92C24F00AEA892 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		84A27D5E1D9786D700D85EF2 /* VCSignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCSignInViewController.swift; sourceTree = "<group>"; };
 		89DBC3451D464B7F10415766 /* Pods-YXVideoCapture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YXVideoCapture.release.xcconfig"; path = "Pods/Target Support Files/Pods-YXVideoCapture/Pods-YXVideoCapture.release.xcconfig"; sourceTree = "<group>"; };
 		B463DA807075BD5028F7737F /* Pods_YXVideoCapture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YXVideoCapture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -156,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				843FC47E1D938CAF00AF61C3 /* YXHomeCollectionViewCell.swift */,
+				842D81CA1D9518F0001CD49D /* VCAVPlayerView.swift */,
 			);
 			path = VCView;
 			sourceTree = "<group>";
@@ -181,8 +182,6 @@
 		84697D951D8E885A0055656A /* YXVideoCapture */ = {
 			isa = PBXGroup;
 			children = (
-				848E8BD81D94C6E400BE9B90 /* temp.mp4 */,
-				844D71E91D93FF6500341A1A /* 日记.txt */,
 				843FC47D1D938CA400AF61C3 /* VCView */,
 				42C2333D1D9284A500457144 /* Camera */,
 				84697DB11D8E889E0055656A /* VCTools */,
@@ -223,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				848E8BDD1D94CAFB00BE9B90 /* VCLoginViewContoller.swift */,
+				84A27D5E1D9786D700D85EF2 /* VCSignInViewController.swift */,
 			);
 			name = VCLoginViewControllers;
 			path = VCLoginViewControllers/VCLoginViewControllers;
@@ -293,9 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84697DA11D8E885A0055656A /* LaunchScreen.storyboard in Resources */,
-				844D71EA1D93FF6500341A1A /* 日记.txt in Resources */,
 				84697D9E1D8E885A0055656A /* Assets.xcassets in Resources */,
-				848E8BD91D94C6E400BE9B90 /* temp.mp4 in Resources */,
 				84697D9C1D8E885A0055656A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,7 +364,9 @@
 				42C2333F1D9284B500457144 /* CameraController.swift in Sources */,
 				84697DAE1D8E888B0055656A /* VCCamerViewController.swift in Sources */,
 				84697DB01D8E888B0055656A /* VCTabBarController.swift in Sources */,
+				842D81CB1D9518F0001CD49D /* VCAVPlayerView.swift in Sources */,
 				843FC47F1D938CAF00AF61C3 /* YXHomeCollectionViewCell.swift in Sources */,
+				84A27D5F1D9786D700D85EF2 /* VCSignInViewController.swift in Sources */,
 				84697D971D8E885A0055656A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

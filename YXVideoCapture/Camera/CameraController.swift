@@ -152,13 +152,9 @@ class CameraController: NSObject,AVCaptureFileOutputRecordingDelegate {
     }
 
     func writeVideoToAssetLibaray(fileUrl:URL) {
-        //let  file = BmobFile(filePath: fileUrl.absoluteString);
-        
-        var path = Bundle.main.bundlePath
-        path.append("/temp.mp4")
-         let  file = BmobFile(filePath: path);
+       
+        let  file = BmobFile(filePath: self.outputUrl?.path);
         file?.saveInBackground(byDataSharding: { (isSuccesssful, error) in
-            
             
             
             print("upload \(error)")

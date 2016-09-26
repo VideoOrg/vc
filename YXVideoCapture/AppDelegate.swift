@@ -29,9 +29,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let VC = VCLoginViewContoller()
         
-//        let nav = VCBaseNavigationViewController()
-//        nav.addChildViewController(VC)
-        
         window?.rootViewController = VC;
         
         
