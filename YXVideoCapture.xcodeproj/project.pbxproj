@@ -40,6 +40,7 @@
 		8493DB991D92C23A00AEA892 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8493DB981D92C23A00AEA892 /* libicucore.tbd */; };
 		8493DB9B1D92C24F00AEA892 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8493DB9A1D92C24F00AEA892 /* libsqlite3.tbd */; };
 		84A27D5F1D9786D700D85EF2 /* VCSignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A27D5E1D9786D700D85EF2 /* VCSignInViewController.swift */; };
+		84F64D1C1D98C90800AD52CD /* VCMyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F64D1B1D98C90800AD52CD /* VCMyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +81,7 @@
 		8493DB981D92C23A00AEA892 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
 		8493DB9A1D92C24F00AEA892 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		84A27D5E1D9786D700D85EF2 /* VCSignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCSignInViewController.swift; sourceTree = "<group>"; };
+		84F64D1B1D98C90800AD52CD /* VCMyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VCMyViewController.swift; path = ../../../../../../../Documents/VCMyViewController.swift; sourceTree = "<group>"; };
 		89DBC3451D464B7F10415766 /* Pods-YXVideoCapture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YXVideoCapture.release.xcconfig"; path = "Pods/Target Support Files/Pods-YXVideoCapture/Pods-YXVideoCapture.release.xcconfig"; sourceTree = "<group>"; };
 		B463DA807075BD5028F7737F /* Pods_YXVideoCapture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YXVideoCapture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -198,6 +200,7 @@
 		84697DA81D8E888B0055656A /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				84F64D1A1D98C8B900AD52CD /* VCMyViewControllers */,
 				848E8BDC1D94CA9C00BE9B90 /* VCLoginViewControllers */,
 				84697DA91D8E888B0055656A /* VCBaseNavigationViewController.swift */,
 				84697DAA1D8E888B0055656A /* VCCamerViewController.swift */,
@@ -226,6 +229,15 @@
 			);
 			name = VCLoginViewControllers;
 			path = VCLoginViewControllers/VCLoginViewControllers;
+			sourceTree = "<group>";
+		};
+		84F64D1A1D98C8B900AD52CD /* VCMyViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				84F64D1B1D98C90800AD52CD /* VCMyViewController.swift */,
+			);
+			name = VCMyViewControllers;
+			path = VCMyViewControllers/VCMyViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -354,6 +366,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84697DB41D8E889E0055656A /* VCTools.swift in Sources */,
+				84F64D1C1D98C90800AD52CD /* VCMyViewController.swift in Sources */,
 				848E8BDE1D94CAFB00BE9B90 /* VCLoginViewContoller.swift in Sources */,
 				84697DAF1D8E888B0055656A /* VCHomeViewController.swift in Sources */,
 				8423C6CF1D90D7DB005CCCC9 /* YXBaseViewController.swift in Sources */,

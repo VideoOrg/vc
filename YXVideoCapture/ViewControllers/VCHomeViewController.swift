@@ -8,13 +8,27 @@
 
 import UIKit
 import Kingfisher
-class VCHomeViewController: UIViewController  ,UICollectionViewDelegate,UICollectionViewDataSource{
+class VCHomeViewController: YXBaseViewController  ,UICollectionViewDelegate,UICollectionViewDataSource{
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "拍一下"
-        self.view.backgroundColor = VCBaseViewColor()
+        self.title = "拍拍"
+        
+       //  let user = BmobUser.current()
+        
+         self.view.backgroundColor = VCBaseViewColor()
+        
+        
+        
+        let leftButton = UIButton(frame: CGRect(x: 0, y: 0, width: 44, height: 44))
+        leftButton.contentHorizontalAlignment = UIControlContentHorizontalAlignment(rawValue: 1)!
+        leftButton .setTitle("我", for: .normal)
+        leftButton .setTitleColor(UIColor.black, for: .normal)
+        leftButton.addTarget(self, action: #selector(leftButtonClick), for: .touchUpInside)
+        let item1=UIBarButtonItem(customView: leftButton)
+        self.navigationItem.leftBarButtonItem = item1
+
     
         let rightButton = UIButton(frame: CGRect(x: 0, y: 0, width: 44, height: 44))
         
@@ -157,6 +171,11 @@ class VCHomeViewController: UIViewController  ,UICollectionViewDelegate,UICollec
     func rightButtonClick(button: UIButton) {
         let seeAllVC = VCCamerViewController()
         navigationController?.pushViewController(seeAllVC, animated: false)
+    }
+    
+    func leftButtonClick(button: UIButton) {
+        let MyViewVC = VCMyViewController()
+        navigationController?.pushViewController(MyViewVC, animated: false)
     }
     
     

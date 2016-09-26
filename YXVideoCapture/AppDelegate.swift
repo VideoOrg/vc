@@ -19,18 +19,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKey()
         
-//        let VC = VCHomeViewController()
-//        
-//        let nav = VCBaseNavigationViewController()
-//        nav.addChildViewController(VC)
-//        
-//        window?.rootViewController = nav;
-
-        
         let VC = VCLoginViewContoller()
         
-        window?.rootViewController = VC;
+        let nav = VCBaseNavigationViewController()
+        nav.addChildViewController(VC)
         
+        window?.rootViewController = nav;
+
+//        
+//        let VC = VCLoginViewContoller()
+//        
+//        window?.rootViewController = VC;
+//        
         
         
        let appKey = "e9e2b431246dd62689c91263d52522de"
@@ -47,19 +47,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //            }
 //        }
         
-        
-        let bquery = BmobQuery(className: "GameScore")
-        
-        bquery?.getObjectInBackground(withId:"214e30a695", block: { (bmobObject, error) in
-            if ((error) != nil) {
-                
-            }else{
-                if (bmobObject != nil) {
-                    let nameSting:String = bmobObject?.object(forKey: "name") as! String
-                    print(nameSting)
-                }
-            }
-        })
+//        
+//        let bquery = BmobQuery(className: "GameScore")
+//        
+//        bquery?.getObjectInBackground(withId:"214e30a695", block: { (bmobObject, error) in
+//            if ((error) != nil) {
+//                
+//            }else{
+//                if (bmobObject != nil) {
+//                    let nameSting:String = bmobObject?.object(forKey: "name") as! String
+//                    print(nameSting)
+//                }
+//            }
+//        })
         // Override point for customization after application launch.
         return true
     }

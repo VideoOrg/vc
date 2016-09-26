@@ -33,9 +33,16 @@ class VCLoginViewContoller: YXBaseViewController ,UITextFieldDelegate{
     
     
     
+    override  func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: false)
+    }
     
-    
-    
+    override func viewWillDisappear(_ animated: Bool) {
+        navigationController?.setNavigationBarHidden(false, animated: false)
+    }
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = VCBaseViewColor()
@@ -119,14 +126,14 @@ class VCLoginViewContoller: YXBaseViewController ,UITextFieldDelegate{
 
         
         
-        loginButton = UIButton(frame: CGRect(x:0, y:SWIDTH+30+20+44, width:64, height:64))
+        loginButton = UIButton(frame: CGRect(x:vLogin.frame.origin.x+30, y:vLogin.frame.origin.y+vLogin.frame.size.height+20, width:64, height:44))
         loginButton .setTitle("登录", for: .normal)
         loginButton .setTitleColor(UIColor.black, for: .normal)
         loginButton .addTarget(self, action: #selector(loginButTag), for: .touchUpInside)
         view .addSubview(loginButton)
     
         
-        signInButton = UIButton(frame: CGRect(x:0, y:SWIDTH+30+20+44, width:64, height:64))
+        signInButton = UIButton(frame: CGRect(x:vLogin.frame.origin.x+vLogin.frame.size.width-30-64, y:vLogin.frame.origin.y+vLogin.frame.size.height+20, width:64, height:44))
         signInButton .setTitle("注册", for: .normal)
         signInButton .setTitleColor(UIColor.black, for: .normal)
         signInButton .addTarget(self, action: #selector(zhuceButTag), for: .touchUpInside)
@@ -210,10 +217,20 @@ class VCLoginViewContoller: YXBaseViewController ,UITextFieldDelegate{
     
     
     func loginButTag() {
-        
+        BmobUser.loginWithUsername(inBackground: texUser.text, password: texPwd.text) { (bmobuer, error) in
+            if bmobuer != nil {
+                let HomeViewController = VCHomeViewController()
+                self.navigationController?.pushViewController(HomeViewController, animated: false)
+            }else{
+                print("error \(error)")
+            }
+        }
     }
 
     func zhuceButTag() {
+        
+        let SignInViewController = VCSignInViewController()
+        navigationController?.pushViewController(SignInViewController, animated: false)
         
     }
     
