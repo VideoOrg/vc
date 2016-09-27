@@ -19,12 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKey()
         
-        
         let user = BmobUser.current()
         
-       
-        
-        
+
         if ((user?.username) != nil) {
              let VC = VCTabBarController()
             // let nav = VCBaseNavigationViewController()

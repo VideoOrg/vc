@@ -104,6 +104,13 @@ class CameraController: NSObject,AVCaptureFileOutputRecordingDelegate {
     
     // unique url
     func uniqueURL() -> URL {
+        let curDateString = Date()
+        let dateFormat = DateFormatter()
+        dateFormat.locale = Locale.current
+        dateFormat.dateFormat = "HH:mm:ss-E-M-dd-zzz-GGG"
+        let stringDate = dateFormat.string(from: curDateString)
+        print(stringDate)
+        
         let nsDocumentDirectory = FileManager.SearchPathDirectory.documentDirectory
         let nsUserDomainMask    = FileManager.SearchPathDomainMask.userDomainMask
         let documentpath       = NSSearchPathForDirectoriesInDomains(nsDocumentDirectory, nsUserDomainMask, true).last
@@ -131,6 +138,32 @@ class CameraController: NSObject,AVCaptureFileOutputRecordingDelegate {
             self.outputUrl = uniqueURL()
             self.movieOutput.startRecording(toOutputFileURL: self.outputUrl, recordingDelegate: self)
         }
+    }
+    
+ 
+    func generateThumbnailFromVideoUrl(video:URL) {
+        
+        
+        DispatchQueue.global().async {
+            
+            let asset = AVAsset(url: video)
+            let imageGenerate = AVAssetImageGenerator(asset: asset)
+            imageGenerate.maximumSize = CGSize(width: 100, height: 0)
+            imageGenerate.appliesPreferredTrackTransform = true
+            do{
+              let imageRef = try imageGenerate.copyCGImage(at: kCMTimeZero, actualTime: nil)
+              let image = UIImage(cgImage: imageRef)
+              
+                
+            }catch{
+                return
+            }
+            
+            
+            
+            
+        }
+        
     }
     
     
