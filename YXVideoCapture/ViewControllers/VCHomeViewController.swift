@@ -8,28 +8,25 @@
 
 import UIKit
 import Kingfisher
-class VCHomeViewController: YXBaseViewController  ,UICollectionViewDelegate,UICollectionViewDataSource{
+class VCHomeViewController: UIViewController  ,UICollectionViewDelegate,UICollectionViewDataSource{
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "拍拍"
-        
-       //  let user = BmobUser.current()
-        
-         self.view.backgroundColor = VCBaseViewColor()
+        title = "主页"
+        self.view.backgroundColor = VCBaseViewColor()
         
         
         
-        let leftButton = UIButton(frame: CGRect(x: 0, y: 0, width: 44, height: 44))
-        leftButton.contentHorizontalAlignment = UIControlContentHorizontalAlignment(rawValue: 1)!
-        leftButton .setTitle("我", for: .normal)
-        leftButton .setTitleColor(UIColor.black, for: .normal)
-        leftButton.addTarget(self, action: #selector(leftButtonClick), for: .touchUpInside)
-        let item1=UIBarButtonItem(customView: leftButton)
-        self.navigationItem.leftBarButtonItem = item1
-
-    
+//        let leftButton = UIButton(frame: CGRect(x: 0, y: 0, width: 44, height: 44))
+//        leftButton.contentHorizontalAlignment = UIControlContentHorizontalAlignment(rawValue: 1)!
+//        leftButton .setTitle("我", for: .normal)
+//        leftButton .setTitleColor(UIColor.black, for: .normal)
+//        leftButton.addTarget(self, action: #selector(leftButtonClick), for: .touchUpInside)
+//        let item1=UIBarButtonItem(customView: leftButton)
+//        self.navigationItem.leftBarButtonItem = item1
+//
+//    
         let rightButton = UIButton(frame: CGRect(x: 0, y: 0, width: 44, height: 44))
         
         rightButton.contentHorizontalAlignment = UIControlContentHorizontalAlignment(rawValue: 2)!
@@ -71,7 +68,7 @@ class VCHomeViewController: YXBaseViewController  ,UICollectionViewDelegate,UICo
         
         
         // 1.自定义 UICollectionView 的位置大小, 以及 Item 的显示样式为 flowLayout
-        let collection = UICollectionView(frame: CGRect(x:0,y: 64, width:self.view.frame.width,  height:self.view.frame.height-64), collectionViewLayout: flowLayout)
+        let collection = UICollectionView(frame: CGRect(x:0,y: 64, width:self.view.frame.width,  height:self.view.frame.height-64-49), collectionViewLayout: flowLayout)
         
         // 2.设置 UICollectionView 的背景颜色
         collection.backgroundColor = UIColor.white

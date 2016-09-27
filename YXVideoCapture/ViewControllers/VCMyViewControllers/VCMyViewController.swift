@@ -8,12 +8,12 @@
 
 import UIKit
 
-class VCMyViewController: YXBaseViewController {
+class VCMyViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = VCBaseViewColor()
-        title = "我"
+        title = "我的"
         // Do any additional setup after loading the view.
     }
 
