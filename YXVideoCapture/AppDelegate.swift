@@ -19,18 +19,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKey()
         
-        let VC = VCLoginViewContoller()
+//        let VC = VCLoginViewContoller()
         
-        let nav = VCBaseNavigationViewController()
-        nav.addChildViewController(VC)
+//        let nav = VCBaseNavigationViewController()
+//        nav.addChildViewController(VC)
         
-        window?.rootViewController = nav;
+//        window?.rootViewController = nav;
 
 //        
-//        let VC = VCLoginViewContoller()
-//        
-//        window?.rootViewController = VC;
-//        
+        let VC = VCHomeViewController()
+        
+        window?.rootViewController = VC;
+//
         
         
        let appKey = "e9e2b431246dd62689c91263d52522de"
