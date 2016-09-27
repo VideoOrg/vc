@@ -130,8 +130,6 @@ class CameraController: NSObject,AVCaptureFileOutputRecordingDelegate {
             
             self.outputUrl = uniqueURL()
             self.movieOutput.startRecording(toOutputFileURL: self.outputUrl, recordingDelegate: self)
-        }else{
-            stopRecording()
         }
     }
     
@@ -154,12 +152,19 @@ class CameraController: NSObject,AVCaptureFileOutputRecordingDelegate {
     func writeVideoToAssetLibaray(fileUrl:URL) {
        
         let  file = BmobFile(filePath: self.outputUrl?.path);
+        
         file?.saveInBackground(byDataSharding: { (isSuccesssful, error) in
             
+            if isSuccesssful {
+               
+                
+            }else{
+                print("error \(error)")
+            }
             
-            print("upload \(error)")
-           
-        
+            
         })
+        
+        
     }
 }

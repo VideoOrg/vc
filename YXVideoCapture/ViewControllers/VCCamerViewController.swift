@@ -100,11 +100,13 @@ class VCCamerViewController: UIViewController {
     }
     
     func startOrSTopTag(button:UIButton) {
+        self.startOrSTopButton .isEnabled = false
         self.cameraController.startRecording()
     }
     
     func finishViedoTag(button:UIButton) {
-        
+        self.startOrSTopButton .isEnabled = true
+        self.cameraController.stopRecording()
     }
     
     override func didReceiveMemoryWarning() {
