@@ -22,27 +22,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let user = BmobUser.current()
         
 
-        if ((user?.username) != nil) {
+//        if ((user?.username) != nil) {
              let VC = VCTabBarController()
             // let nav = VCBaseNavigationViewController()
             // nav.addChildViewController(VC)
             
              window?.rootViewController = VC;
             
-           
             
-
-        }else{
-             let VC = VCLoginViewContoller()
-             let nav = VCBaseNavigationViewController()
-             nav.addChildViewController(VC)
-             window?.rootViewController = nav;
-
-        }
+//
+//        }else{
+//             let VC = VCLoginViewContoller()
+//             let nav = VCBaseNavigationViewController()
+//             nav.addChildViewController(VC)
+//             window?.rootViewController = nav;
+//
+//        }
         
-        
-        
-        
+                
        let appKey = "e9e2b431246dd62689c91263d52522de"
        Bmob.register(withAppKey: appKey)
         
