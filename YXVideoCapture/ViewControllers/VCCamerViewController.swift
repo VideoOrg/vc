@@ -86,13 +86,12 @@ class VCCamerViewController: UIViewController {
     
     
     //MARK: - action
-
     func rightButtonClick(button: UIButton) {
         
     }
     
     func topCameRotateButTag(button:UIButton) {
-        
+        self.cameraController.switchCamera()
     }
     
     func returnTag(button:UIButton) {
