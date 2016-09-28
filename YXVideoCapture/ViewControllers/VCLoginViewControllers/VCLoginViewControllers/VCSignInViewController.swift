@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import MBProgressHUD
 class VCSignInViewController: YXBaseViewController ,UITextFieldDelegate{
 
     var texUser = UITextField()
@@ -74,7 +74,19 @@ class VCSignInViewController: YXBaseViewController ,UITextFieldDelegate{
             if isSuccessful {
                let _ =  self.navigationController?.popViewController(animated: false)
             }else{
-                print("Sign up error\(error)")
+                let er: NSError = error as! NSError
+        
+                let hud = MBProgressHUD.showAdded(to: self.view, animated: true)
+                hud.mode = MBProgressHUDMode.text
+                if er.code == 202 {
+                    hud.label.text = "该账户已经注册过"
+                }else if er.code == 20000 {
+                   hud.label.text = "密码为空"
+                }else {
+                    hud.label.text = "请检查你的网络"
+                }
+                
+                hud.hide(animated: true, afterDelay: 0.8)
             }
         }
         

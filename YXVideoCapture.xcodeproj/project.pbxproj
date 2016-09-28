@@ -184,8 +184,8 @@
 		84697D951D8E885A0055656A /* YXVideoCapture */ = {
 			isa = PBXGroup;
 			children = (
-				843FC47D1D938CA400AF61C3 /* VCView */,
 				42C2333D1D9284A500457144 /* Camera */,
+				843FC47D1D938CA400AF61C3 /* VCView */,
 				84697DB11D8E889E0055656A /* VCTools */,
 				84697DA81D8E888B0055656A /* ViewControllers */,
 				84697D961D8E885A0055656A /* AppDelegate.swift */,
@@ -246,12 +246,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84697DA51D8E885A0055656A /* Build configuration list for PBXNativeTarget "YXVideoCapture" */;
 			buildPhases = (
+				CA7F7A52CB51C7976D0D41F3 /* 📦 Check Pods Manifest.lock */,
 				C1DC20A4506FBC646A5EE836 /* [CP] Check Pods Manifest.lock */,
 				84697D8F1D8E885A0055656A /* Sources */,
 				84697D901D8E885A0055656A /* Frameworks */,
 				84697D911D8E885A0055656A /* Resources */,
 				9982B72E93C69265472110E2 /* [CP] Embed Pods Frameworks */,
 				BCDA3C602263BBE234B392B1 /* [CP] Copy Pods Resources */,
+				47ABA43502D27CB84F540A42 /* 📦 Embed Pods Frameworks */,
+				1B1E1A214CB6AAB72E0E3778 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -312,6 +315,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1B1E1A214CB6AAB72E0E3778 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YXVideoCapture/Pods-YXVideoCapture-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		47ABA43502D27CB84F540A42 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YXVideoCapture/Pods-YXVideoCapture-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		9982B72E93C69265472110E2 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -350,6 +383,21 @@
 			inputPaths = (
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CA7F7A52CB51C7976D0D41F3 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,8 +7,12 @@
 //
 
 #ifndef YXVideoCapture_Bridging_Header_h
+
 #define YXVideoCapture_Bridging_Header_h
 #import <BmobSDK/Bmob.h>
+
+#import "MBProgressHUD/MBProgressHUD.h"
+
 
 #endif /* YXVideoCapture_Bridging_Header_h */
 

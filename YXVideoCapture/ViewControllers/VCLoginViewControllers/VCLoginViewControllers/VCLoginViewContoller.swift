@@ -7,9 +7,9 @@
 //
 
 import UIKit
+import MBProgressHUD
 
-
-class VCLoginViewContoller: YXBaseViewController ,UITextFieldDelegate{
+class VCLoginViewContoller: YXBaseViewController ,UITextFieldDelegate {
 
     var texUser = UITextField()
     var texPwd = UITextField()
@@ -219,10 +219,24 @@ class VCLoginViewContoller: YXBaseViewController ,UITextFieldDelegate{
     func loginButTag() {
         BmobUser.loginWithUsername(inBackground: texUser.text, password: texPwd.text) { (bmobuer, error) in
             if bmobuer != nil {
-                let HomeViewController = VCHomeViewController()
-                self.navigationController?.pushViewController(HomeViewController, animated: false)
+            let appdelegate = UIApplication.shared.delegate as? AppDelegate
+                appdelegate?.switchRootViewController()
             }else{
-                print("error \(error)")
+                let er: NSError = error as! NSError
+                let hud = MBProgressHUD.showAdded(to: self.view, animated: true)
+                hud.mode = MBProgressHUDMode.text
+                 print("login error \(error)")
+                if er.code == 101 {
+                    hud.label.text = "账户或密码错误"
+                }else if  er.code == 20001{
+                    hud.label.text = "账户为空"
+                }else if  er.code == 2000{
+                    hud.label.text = "密码为空"
+                }else{
+                    hud.label.text = "请检查你的网络"
+                }
+                hud.hide(animated: true, afterDelay: 0.8)
+
             }
         }
     }

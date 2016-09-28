@@ -7,6 +7,7 @@ target 'YXVideoCapture' do
 
   pod 'Kingfisher'
   pod 'BmobSDK'
+  pod 'MBProgressHUD'
   # Pods for YXVideoCapture
 
 end
