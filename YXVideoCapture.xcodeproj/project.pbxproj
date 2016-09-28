@@ -277,7 +277,7 @@
 				TargetAttributes = {
 					84697D921D8E885A0055656A = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = UXH5SGQJJB;
+						DevelopmentTeam = HF526ANGZB;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
@@ -553,7 +553,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = UXH5SGQJJB;
+				DEVELOPMENT_TEAM = HF526ANGZB;
 				INFOPLIST_FILE = YXVideoCapture/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -573,7 +573,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = UXH5SGQJJB;
+				DEVELOPMENT_TEAM = HF526ANGZB;
 				INFOPLIST_FILE = YXVideoCapture/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

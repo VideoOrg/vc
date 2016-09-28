@@ -29,8 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let user = BmobUser.current()
     
         var VC  = UIViewController()
-        
-<<<<<<< HEAD
+    
         if ((user?.username) != nil) {
            VC = VCTabBarController()
             
@@ -41,58 +40,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
          window?.rootViewController = VC
          window?.makeKeyAndVisible()
-        
-=======
-
-//        if ((user?.username) != nil) {
-             let VC = VCTabBarController()
-            // let nav = VCBaseNavigationViewController()
-            // nav.addChildViewController(VC)
-            
-             window?.rootViewController = VC;
-            
-            
-//
-//        }else{
-//             let VC = VCLoginViewContoller()
-//             let nav = VCBaseNavigationViewController()
-//             nav.addChildViewController(VC)
-//             window?.rootViewController = nav;
-//
-//        }
-        
-                
-       let appKey = "e9e2b431246dd62689c91263d52522de"
-       Bmob.register(withAppKey: appKey)
-        
-        
-        
-//        let gameScore = BmobObject(className: "GameScore")
-//        gameScore?.setObject("小明", forKey: "name")
-//        gameScore?.setObject("13", forKey: "age")
-//        gameScore?.saveInBackground { (isSuccessful, error) in
-//            if isSuccessful == true {
-//                print("大家伙")
-//            }
-//        }
-        
-//        
-//        let bquery = BmobQuery(className: "GameScore")
-//        
-//        bquery?.getObjectInBackground(withId:"214e30a695", block: { (bmobObject, error) in
-//            if ((error) != nil) {
-//                
-//            }else{
-//                if (bmobObject != nil) {
-//                    let nameSting:String = bmobObject?.object(forKey: "name") as! String
-//                    print(nameSting)
-//                }
-//            }
-//        })
-        // Override point for customization after application launch.
-        return true
->>>>>>> 4d8d725475b3416f3dd0a70531e91cffd4e95000
-    }
+            }
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
