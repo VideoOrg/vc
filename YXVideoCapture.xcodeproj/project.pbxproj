@@ -28,6 +28,7 @@
 		84697DAF1D8E888B0055656A /* VCHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84697DAB1D8E888B0055656A /* VCHomeViewController.swift */; };
 		84697DB01D8E888B0055656A /* VCTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84697DAC1D8E888B0055656A /* VCTabBarController.swift */; };
 		84697DB41D8E889E0055656A /* VCTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84697DB21D8E889E0055656A /* VCTools.swift */; };
+		847F3F081D9CA50C001614C1 /* VCHomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847F3F071D9CA50C001614C1 /* VCHomeModel.swift */; };
 		848E8BDE1D94CAFB00BE9B90 /* VCLoginViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848E8BDD1D94CAFB00BE9B90 /* VCLoginViewContoller.swift */; };
 		8493DB891D92C1B200AEA892 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8493DB881D92C1B200AEA892 /* CoreLocation.framework */; };
 		8493DB8B1D92C1BC00AEA892 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8493DB8A1D92C1BC00AEA892 /* Security.framework */; };
@@ -69,6 +70,7 @@
 		84697DAB1D8E888B0055656A /* VCHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCHomeViewController.swift; sourceTree = "<group>"; };
 		84697DAC1D8E888B0055656A /* VCTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCTabBarController.swift; sourceTree = "<group>"; };
 		84697DB21D8E889E0055656A /* VCTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCTools.swift; sourceTree = "<group>"; };
+		847F3F071D9CA50C001614C1 /* VCHomeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCHomeModel.swift; sourceTree = "<group>"; };
 		848E8BDD1D94CAFB00BE9B90 /* VCLoginViewContoller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCLoginViewContoller.swift; sourceTree = "<group>"; };
 		8493DB881D92C1B200AEA892 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		8493DB8A1D92C1BC00AEA892 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -184,6 +186,7 @@
 		84697D951D8E885A0055656A /* YXVideoCapture */ = {
 			isa = PBXGroup;
 			children = (
+				847F3F061D9CA4ED001614C1 /* VCModel */,
 				42C2333D1D9284A500457144 /* Camera */,
 				843FC47D1D938CA400AF61C3 /* VCView */,
 				84697DB11D8E889E0055656A /* VCTools */,
@@ -219,6 +222,14 @@
 				843FC4861D938F7000AF61C3 /* YXVideoCapture-Bridging-Header.h */,
 			);
 			path = VCTools;
+			sourceTree = "<group>";
+		};
+		847F3F061D9CA4ED001614C1 /* VCModel */ = {
+			isa = PBXGroup;
+			children = (
+				847F3F071D9CA50C001614C1 /* VCHomeModel.swift */,
+			);
+			path = VCModel;
 			sourceTree = "<group>";
 		};
 		848E8BDC1D94CA9C00BE9B90 /* VCLoginViewControllers */ = {
@@ -428,6 +439,7 @@
 				843FC47F1D938CAF00AF61C3 /* YXHomeCollectionViewCell.swift in Sources */,
 				84A27D5F1D9786D700D85EF2 /* VCSignInViewController.swift in Sources */,
 				84697D971D8E885A0055656A /* AppDelegate.swift in Sources */,
+				847F3F081D9CA50C001614C1 /* VCHomeModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
