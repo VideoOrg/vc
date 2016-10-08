@@ -198,12 +198,12 @@ class CameraController: NSObject,AVCaptureFileOutputRecordingDelegate {
                 //如果文件保存成功，则把文件添加到file列
                 let weakFile = file
                 obj?.setObject(weakFile, forKey: "video")
-                obj?.saveInBackground(resultBlock: { (success, err) in
-                    if err != nil {
-                        print("save \(error)")
-                        MBProgressHUD().show(animated: true)
-                    }else{
-                        
+//                obj?.saveInBackground(resultBlock: { (success, err) in
+//                    if err != nil {
+//                        print("save \(error)")
+//                        MBProgressHUD().show(animated: true)
+//                    }else{
+                
                         // upload thumbnail
                         self.generateThumbnailFromVideoUrl(video: fileUrl, complete: { (image) in
                             
@@ -233,12 +233,12 @@ class CameraController: NSObject,AVCaptureFileOutputRecordingDelegate {
                         })
                     }
                     
-                    print(obj)
-                    print(file)
-                })
-            }else{
-                print("upload \(error)")
-            }
+//                    print(obj)
+//                    print(file)
+//                })
+//            }else{
+//                print("upload \(error)")
+//            }
         }
     }
     

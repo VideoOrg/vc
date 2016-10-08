@@ -12,6 +12,9 @@ class VCHomeViewController: UIViewController  ,UICollectionViewDelegate,UICollec
     
     var vartaArray = NSMutableArray()
     
+//    var flowLayout = UICollectionViewFlowLayout()
+    
+    var collection : UICollectionView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,30 +34,8 @@ class VCHomeViewController: UIViewController  ,UICollectionViewDelegate,UICollec
         self.navigationItem.rightBarButtonItem = item2
     
         self.automaticallyAdjustsScrollViewInsets = false
-        let query = BmobQuery(className: "Movie")
-        query?.findObjectsInBackground { (array, error) in
-           
-            
-            self.vartaArray .addObjects(from: array!)
-            
-//            for item in 0..<(array?.count)!{
-//                
-//                let obj = array?[item] as! BmobObject
-//                
-//                var model = [VCHomeModel]()
-//
-//                
-//        
-//                   
-//                   let videoObject = obj.object(forKey: "video") as! BmobFile!
-//                
-//                
-//                    model((dict: videoObject?.url as! [String: AnyObject]))
-//                 
-//               
-//                
-//            }
-            
+      
+      
             let flowLayout = UICollectionViewFlowLayout()
             
             // 2.设置 Item 的 Size
@@ -80,43 +61,50 @@ class VCHomeViewController: UIViewController  ,UICollectionViewDelegate,UICollec
             
             
             // 1.自定义 UICollectionView 的位置大小, 以及 Item 的显示样式为 flowLayout
-            let collection = UICollectionView(frame: CGRect(x:0,y: 64, width:self.view.frame.width,  height:self.view.frame.height-64-49), collectionViewLayout: flowLayout)
+           self.collection =  UICollectionView(frame: CGRect(x:0,y: 64, width:self.view.frame.width,  height:self.view.frame.height-64-49), collectionViewLayout: flowLayout)
             
             // 2.设置 UICollectionView 的背景颜色
-            collection.backgroundColor = UIColor.white
+            self.collection?.backgroundColor = UIColor.white
             
             // 3.设置 UICollectionView 垂直滚动是否滚到 Item 的最底部内容
-            collection.alwaysBounceVertical = true
+            self.collection?.alwaysBounceVertical = true
             
             // 4.设置 UICollectionView 垂直滚动是否滚到 Item 的最右边内容
             // collection.alwaysBounceHorizontal = true
             
             // 5.设置 UICollectionView 的数据源对象
-            collection.dataSource = self
+            self.collection?.dataSource = self
             
             // 6.设置 UICollectionView 的代理对象
-            collection.delegate = self
+            self.collection?.delegate = self
             
             
             // 7.设置 UICollectionView 的单元格点击(默认是 true)
-            collection.allowsSelection = true
+            self.collection?.allowsSelection = true
             
             // 8.设置 UICollectionView 的单元格多选(默认是 false)
-            collection.allowsMultipleSelection = false
+            self.collection?.allowsMultipleSelection = false
             
             // 9.开启 UICollectionView 的分页显示效果
-            collection.isPagingEnabled = true
+            self.collection?.isPagingEnabled = true
             
             // 10.注册 UICollectionViewCell
-            collection.register(YXHomeCollectionViewCell.self, forCellWithReuseIdentifier: "collectionViewCell")
+            self.collection?.register(YXHomeCollectionViewCell.self, forCellWithReuseIdentifier: "collectionViewCell")
             // 11.添加到 self.view 上
-            self.view.addSubview(collection)
-        }
+            self.view.addSubview(self.collection!)
         
- 
-   
     }
 
+    override  func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        let query = BmobQuery(className: "Movie")
+        query?.findObjectsInBackground { (array, error) in
+            self.vartaArray .removeAllObjects()
+            self.vartaArray .addObjects(from: array!)
+            self.collection?.reloadData()
+            
+        }
+    }
 
     
     // 1.该方法是用来设置返回 CollectionViewCell 的组数

@@ -24,8 +24,9 @@ class VCMyViewController: UIViewController ,UITableViewDelegate, UITableViewData
         title = "我的"
         
         let user = BmobUser.current()
+        let countString = "账号："+(user?.username)!
         
-        dataArry = [user?.username]
+        dataArry = [countString]
         
         //之前这个地方定义的是var tableView局部变量，导致点了delete没反应
         let  tableView = UITableView(frame: CGRect(x: 0, y: 0, width: SWIDTH, height:SHEIGHT))
