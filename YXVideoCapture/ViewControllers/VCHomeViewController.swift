@@ -139,8 +139,8 @@ class VCHomeViewController: UIViewController  ,UICollectionViewDelegate,UICollec
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let videoPreviews = VCVideoPreviewsViewController()
         
-         let obj = vartaArray[1] as! BmobObject
-         let videoObject = obj.object(forKey: "video") as! BmobFile!
+         let obj = vartaArray[indexPath.row] as! BmobObject
+         let videoObject = obj.object(forKey: "video") as? BmobFile
         videoPreviews .urlSTring = (videoObject?.url)!
         videoPreviews .hidesBottomBarWhenPushed = true
         navigationController?.pushViewController(videoPreviews, animated: false)
