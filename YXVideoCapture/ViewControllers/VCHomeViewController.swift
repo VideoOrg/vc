@@ -134,10 +134,19 @@ class VCHomeViewController: UIViewController  ,UICollectionViewDelegate,UICollec
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let collectionCell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionViewCell", for: indexPath as IndexPath) as! YXHomeCollectionViewCell
     
-        let imageR = ImageResource(downloadURL: URL(string: "http://pic26.nipic.com/20121217/9252150_110558501000_2.jpg")!)
-        collectionCell.imgView?.kf_setImage(with: imageR)
-        return collectionCell
-    }
+        let obj = vartaArray[indexPath.row] as! BmobObject
+        let thumbnail = obj.object(forKey: "thumbnail") as? BmobFile
+        if (thumbnail != nil) {
+            let imageR = ImageResource(downloadURL: URL(string: (thumbnail?.url)!)!)
+            collectionCell.imgView?.kf_setImage(with: imageR)
+            return collectionCell
+        }else{
+            let imageR = ImageResource(downloadURL: URL(string: "http://pic26.nipic.com/20121217/9252150_110558501000_2.jpg")!)
+            collectionCell.imgView?.kf_setImage(with: imageR)
+            return collectionCell
+
+        }
+   }
     
     // 4.该方法是点击了 CollectionViewCell 时调用的监听方法
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

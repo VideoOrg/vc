@@ -10,6 +10,7 @@ import UIKit
 import AVFoundation
 import Photos
 import AssetsLibrary
+import MBProgressHUD
 
 class CameraController: NSObject,AVCaptureFileOutputRecordingDelegate {
     
@@ -186,6 +187,7 @@ class CameraController: NSObject,AVCaptureFileOutputRecordingDelegate {
         })
     }
     
+    
     // upload videl file to bmob
     func uploadVideo(fileUrl:URL) {
         
@@ -199,6 +201,36 @@ class CameraController: NSObject,AVCaptureFileOutputRecordingDelegate {
                 obj?.saveInBackground(resultBlock: { (success, err) in
                     if err != nil {
                         print("save \(error)")
+                        MBProgressHUD().show(animated: true)
+                    }else{
+                        
+                        // upload thumbnail
+                        self.generateThumbnailFromVideoUrl(video: fileUrl, complete: { (image) in
+                            
+                            let data = UIImagePNGRepresentation(image)
+                            let imageFile = BmobFile(fileName: "thumbnail.png", withFileData: data)
+                            imageFile?.saveInBackground{ [weak imageFile] (isSuccessful, error) in
+                                
+                                if error != nil {
+                                    let e = error as? NSError
+                                    print(e?.domain)
+                                    return
+                                }
+                                
+                                let weakimage = imageFile
+                                obj?.setObject(weakimage, forKey: "thumbnail")
+                                obj?.saveInBackground(resultBlock: { (suc, er) in
+                                    if er != nil {
+                                        print("保存图片失败")
+                                        MBProgressHUD().show(animated: true)
+                                    }else{
+                                        print("上传图片成功")
+                                        let noti = NSNotification(name: NSNotification.Name(rawValue: "hideMb"), object: nil)
+                                        NotificationCenter.default.post(name: noti.name, object: nil)
+                                    }
+                                })
+                            }
+                        })
                     }
                     
                     print(obj)
@@ -214,7 +246,6 @@ class CameraController: NSObject,AVCaptureFileOutputRecordingDelegate {
         let  file = BmobFile(filePath: self.outputUrl?.path);
         file?.saveInBackground(byDataSharding: { (isSuccesssful, error) in
             if isSuccesssful {
-               self.generateThumbnailFromVideoUrl(video: fileUrl)
             }else{
                 print("error \(error)")
             }
@@ -222,7 +253,7 @@ class CameraController: NSObject,AVCaptureFileOutputRecordingDelegate {
     }
     
     // generate thumbnail
-    func generateThumbnailFromVideoUrl(video:URL) {
+    func generateThumbnailFromVideoUrl(video:URL,complete:@escaping (_ image:UIImage) -> Void) {
         DispatchQueue.global().async {
             let asset = AVAsset(url: video)
             let imageGenerate = AVAssetImageGenerator(asset: asset)
@@ -231,12 +262,12 @@ class CameraController: NSObject,AVCaptureFileOutputRecordingDelegate {
             do{
                 let imageRef = try imageGenerate.copyCGImage(at: kCMTimeZero, actualTime: nil)
                 let image = UIImage(cgImage: imageRef)
+                complete(image)
             }catch{
                 return
             }
         }
     }
-    
     // switch camera
     func switchCamera() {
         if false == self.canswitchCamera() {
