@@ -69,6 +69,7 @@ class VCCamerViewController: UIViewController {
         hud1.customView = UIImageView(image: UIImage(named: "pic_dui@2x"))
         hud1.label.text = "上传完成"
         hud1.hide(animated: true, afterDelay: 1)
+        
     }
 
      override  func viewWillAppear(_ animated: Bool) {
@@ -122,6 +123,9 @@ class VCCamerViewController: UIViewController {
         hud.label.text = "上传中..."
         hud.show(animated: true)
     }
+    
+    
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -31,13 +31,14 @@ class VCVideoPreviewsViewController: YXBaseViewController {
         playerLayer.player = avplayer
         
         
-        playerLayer.frame = CGRect(x:0 , y:64 , width : SWIDTH ,height:SWIDTH)
+        playerLayer.frame = CGRect(x: 0, y: 64, width: SWIDTH, height: SWIDTH)
+
         
         
-        
+        playerLayer.videoGravity = AVLayerVideoGravityResizeAspectFill
         //playerLayer.videoGravity = AVLayerVideoGravityResizeAspect
         playerLayer.contentsScale = UIScreen.main.scale
-        
+        playerLayer.contentsGravity = kCAGravityCenter
        
         view.layer.addSublayer(playerLayer)
         

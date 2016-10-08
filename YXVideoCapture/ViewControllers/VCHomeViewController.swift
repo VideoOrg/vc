@@ -142,6 +142,7 @@ class VCHomeViewController: UIViewController  ,UICollectionViewDelegate,UICollec
          let obj = vartaArray[1] as! BmobObject
          let videoObject = obj.object(forKey: "video") as! BmobFile!
         videoPreviews .urlSTring = (videoObject?.url)!
+        videoPreviews .hidesBottomBarWhenPushed = true
         navigationController?.pushViewController(videoPreviews, animated: false)
     }
     
@@ -181,8 +182,9 @@ class VCHomeViewController: UIViewController  ,UICollectionViewDelegate,UICollec
 
     
     func rightButtonClick(button: UIButton) {
-        let seeAllVC = VCCamerViewController()
-        navigationController?.pushViewController(seeAllVC, animated: false)
+        let videoPreviews = VCCamerViewController()
+        videoPreviews .hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(videoPreviews, animated: false)
     }
     
     func leftButtonClick(button: UIButton) {
