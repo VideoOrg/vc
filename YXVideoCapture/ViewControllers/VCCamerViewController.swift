@@ -8,6 +8,7 @@
 
 import UIKit
 import Photos
+import MBProgressHUD
 //import snapKit
 
 
@@ -24,6 +25,8 @@ class VCCamerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = VCBaseViewColor()
+        
+        NotificationCenter.default.addObserver(self, selector: Selector("hideMB"), name: NSNotification.Name(rawValue: "hideMb"), object: nil)
         
         self.topView = UIView(frame: CGRect(x: 0, y: 20, width: SWIDTH, height: 44))
         self.topView.backgroundColor = UIColor.white
@@ -58,7 +61,15 @@ class VCCamerViewController: UIViewController {
         
     }
     
-    
+    func hideMB() {
+        MBProgressHUD.hideAllHUDs(for: self.view, animated: true)
+        
+        let hud1 = MBProgressHUD.showAdded(to: self.view, animated: true)
+        hud1.mode = .text
+        hud1.customView = UIImageView(image: UIImage(named: "pic_dui@2x"))
+        hud1.label.text = "上传完成"
+        hud1.hide(animated: true, afterDelay: 1)
+    }
 
      override  func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -106,6 +117,10 @@ class VCCamerViewController: UIViewController {
     func finishViedoTag(button:UIButton) {
         self.startOrSTopButton .isEnabled = true
         self.cameraController.stopRecording()
+        
+        let hud = MBProgressHUD.showAdded(to: self.view, animated: true)
+        hud.label.text = "上传中..."
+        hud.show(animated: true)
     }
     
     override func didReceiveMemoryWarning() {
