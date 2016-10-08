@@ -20,3 +20,20 @@ func VCRGBColor(r:CGFloat, g:CGFloat, b:CGFloat, a:CGFloat) -> UIColor {
 func VCBaseViewColor() -> UIColor {
     return VCRGBColor(r: 255, g: 255, b: 255, a: 1)
 }
+//16进制颜色转化
+func VCWithHexCodeColor ( Color_Value:NSString)->UIColor{
+    var  Str :NSString = Color_Value.trimmingCharacters(in: NSCharacterSet.whitespacesAndNewlines).uppercased() as NSString
+    if Color_Value.hasPrefix("#"){
+        Str=(Color_Value as NSString).substring(from: 1) as NSString
+    }
+    let VC_StrRed = (Str as NSString ).substring(to: 2)
+    let VC_StrGreen = ((Str as NSString).substring(from: 2) as NSString).substring(to: 2)
+    let VC_StrBlue = ((Str as NSString).substring(from: 4) as NSString).substring(to: 2)
+    var r:CUnsignedInt = 0, g:CUnsignedInt = 0, b:CUnsignedInt = 0;
+    Scanner(string: VC_StrRed).scanHexInt32(&r)
+    Scanner(string: VC_StrGreen).scanHexInt32(&g)
+    Scanner(string: VC_StrBlue).scanHexInt32(&b)
+    return VCRGBColor(r: CGFloat(r), g: CGFloat(g), b: CGFloat(b), a: 1)
+    
+   // return UIColor(red: CGFloat(r)/255.0, green: CGFloat(g)/255.0, blue: CGFloat(b)/255.0, alpha: 1)
+}

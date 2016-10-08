@@ -25,7 +25,7 @@ class VCMyViewController: UIViewController ,UITableViewDelegate, UITableViewData
         
         let user = BmobUser.current()
         
-        dataArry = [user?.username,"修改密码"]
+        dataArry = [user?.username]
         
         //之前这个地方定义的是var tableView局部变量，导致点了delete没反应
         let  tableView = UITableView(frame: CGRect(x: 0, y: 0, width: SWIDTH, height:SHEIGHT))
@@ -48,7 +48,7 @@ class VCMyViewController: UIViewController ,UITableViewDelegate, UITableViewData
         let footView = UIView(frame: CGRect(x: 0, y: 0, width: SWIDTH, height: 50))
         
         self.footliveView = UIView(frame: CGRect(x: 0, y: 0, width: SWIDTH, height: 0.5))
-        self.footliveView.backgroundColor = UIColor.black
+        self.footliveView.backgroundColor = VCWithHexCodeColor(Color_Value:"#888888")
         footView .addSubview(self.footliveView)
         
         self.logoutButton = UIButton(frame: CGRect(x:0, y:0, width:SWIDTH, height:50))
@@ -57,7 +57,6 @@ class VCMyViewController: UIViewController ,UITableViewDelegate, UITableViewData
         self.logoutButton .addTarget(self, action: #selector(logoutButTag), for: .touchUpInside)
         footView .addSubview(self.logoutButton)
 
-        
         return footView
     }
 

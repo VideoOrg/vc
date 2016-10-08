@@ -17,8 +17,7 @@ class VCHomeViewController: UIViewController  ,UICollectionViewDelegate,UICollec
         super.viewDidLoad()
         title = "主页"
         self.view.backgroundColor = VCBaseViewColor()
-        
-        
+
         //
         let rightButton = UIButton(frame: CGRect(x: 0, y: 0, width: 44, height: 44))
         

@@ -36,7 +36,7 @@ class VCVideoPreviewsViewController: YXBaseViewController {
         
         
         //playerLayer.videoGravity = AVLayerVideoGravityResizeAspect
-//  playerLayer.contentsScale = UIScreen.main.scale
+        playerLayer.contentsScale = UIScreen.main.scale
         
        
         view.layer.addSublayer(playerLayer)

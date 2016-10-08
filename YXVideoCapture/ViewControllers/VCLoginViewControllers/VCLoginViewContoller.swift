@@ -134,7 +134,9 @@ class VCLoginViewContoller: YXBaseViewController ,UITextFieldDelegate {
     
         
         signInButton = UIButton(frame: CGRect(x:vLogin.frame.origin.x+vLogin.frame.size.width-30-64, y:vLogin.frame.origin.y+vLogin.frame.size.height+20, width:64, height:44))
+       
         signInButton .setTitle("注册", for: .normal)
+        
         signInButton .setTitleColor(UIColor.black, for: .normal)
         signInButton .addTarget(self, action: #selector(zhuceButTag), for: .touchUpInside)
         view .addSubview(signInButton)
