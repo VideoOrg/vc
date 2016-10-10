@@ -33,7 +33,7 @@ class VCVideoPreviewsViewController: YXBaseViewController {
         view.layer.addSublayer(playerLayer)
 
         progressSlider = UISlider()
-        progressSlider.frame = CGRect(x: 0,y: SWIDTH+64-15, width: SWIDTH, height: 30)
+        progressSlider.frame = CGRect(x: -2,y: SWIDTH+64-15, width: SWIDTH+4, height: 30)
         progressSlider.isUserInteractionEnabled = true //允许 拖动
         progressSlider.isContinuous = false
         
@@ -43,10 +43,10 @@ class VCVideoPreviewsViewController: YXBaseViewController {
         progressSlider.addTarget(self, action: #selector(VCVideoPreviewsViewController.pssSliderEnd(_:)), for: .touchUpInside)
         progressSlider.addTarget(self, action: #selector(VCVideoPreviewsViewController.pssSliderEnd(_:)), for: .touchUpOutside)
         //播放进度按钮
-//        progressSlider.setThumbImage(UIImage(named: "YXReplay_Handle"), for: UIControlState())
-//        progressSlider.setThumbImage(UIImage(named: "YXReplay_Handle"), for: .highlighted)
-//        progressSlider.setMinimumTrackImage(UIImage(named: "YXReplay_Progress"), for: UIControlState())
-//        progressSlider.setMaximumTrackImage(UIImage(named: "YXReplay_ProgressBG"), for: UIControlState())
+        progressSlider.setThumbImage(UIImage(named: "YXReplay_Handle"), for: UIControlState())
+        progressSlider.setThumbImage(UIImage(named: "YXReplay_Handle"), for: .highlighted)
+        progressSlider.setMinimumTrackImage(UIImage(named: "YXReplay_Progress"), for: UIControlState())
+        progressSlider.setMaximumTrackImage(UIImage(named: "YXReplay_ProgressBG"), for: UIControlState())
         
         view.addSubview(progressSlider)
         self.updateProgress(0, duration: 1)
@@ -156,7 +156,7 @@ extension VCVideoPreviewsViewController {
             guard  let  changeStatus =  change?[NSKeyValueChangeKey.newKey] as? NSNumber  else {
                 return
             }
-            let statusInt =  Int(changeStatus) ?? 0
+            let statusInt =  Int(changeStatus) 
             switch statusInt  {
             case AVPlayerItemStatus.readyToPlay.rawValue:
                 progressSlider.isUserInteractionEnabled = true

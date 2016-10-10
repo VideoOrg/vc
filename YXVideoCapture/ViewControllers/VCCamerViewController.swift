@@ -26,7 +26,7 @@ class VCCamerViewController: UIViewController {
         super.viewDidLoad()
         self.view.backgroundColor = VCBaseViewColor()
         
-        NotificationCenter.default.addObserver(self, selector: Selector("hideMB"), name: NSNotification.Name(rawValue: "hideMb"), object: nil)
+        NotificationCenter.default.addObserver(self, selector:#selector(VCCamerViewController.hideMB), name: NSNotification.Name(rawValue: "hideMb"), object: nil)
         
         self.topView = UIView(frame: CGRect(x: 0, y: 20, width: SWIDTH, height: 44))
         self.topView.backgroundColor = UIColor.white
@@ -57,6 +57,7 @@ class VCCamerViewController: UIViewController {
         self.finishViedoButon = UIButton(frame:CGRect(x:300, y:SWIDTH+50+44, width:64, height:64))
         self.finishViedoButon .setImage(UIImage.init(named: "YXCameFinish"), for: .normal)
         self.finishViedoButon .addTarget(self, action: #selector(finishViedoTag), for: .touchUpInside)
+        self.finishViedoButon .isHidden = true
         view .addSubview(self.finishViedoButon)
         
     }
@@ -69,7 +70,8 @@ class VCCamerViewController: UIViewController {
         hud1.customView = UIImageView(image: UIImage(named: "pic_dui@2x"))
         hud1.label.text = "上传完成"
         hud1.hide(animated: true, afterDelay: 1)
-        
+        self.finishViedoButon .isHidden = true
+
     }
 
      override  func viewWillAppear(_ animated: Bool) {
@@ -112,6 +114,7 @@ class VCCamerViewController: UIViewController {
     
     func startOrSTopTag(button:UIButton) {
         self.startOrSTopButton .isEnabled = false
+        self.finishViedoButon .isHidden = false
         self.cameraController.startRecording()
     }
     
