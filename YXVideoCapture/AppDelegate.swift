@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
-       self .switchRootViewController()
+       self .launchApplication()
     
        let appKey = "e9e2b431246dd62689c91263d52522de"
        Bmob.register(withAppKey: appKey)
@@ -24,6 +24,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
  
+    
+    func launchApplication(){
+        if self.haveScreenAd() {
+            
+            let viewcontroller = self .buildScreenAdViewController()
+            window?.rootViewController = viewcontroller
+            
+        }
+    }
+    
+    func buildScreenAdViewController() -> UIViewController {
+        let screen = VCAdvertisementViewController()
+        return screen
+    }
     
     func switchRootViewController()  {
         let user = BmobUser.current()
@@ -63,6 +77,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+    /**
+     *  是否有开屏广告
+     *
+     *  @return 是/否
+     */
+    
+    func haveScreenAd() -> Bool {
+         return true;
+    }
 }
 

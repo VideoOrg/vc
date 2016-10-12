@@ -102,7 +102,6 @@ class VCHomeViewController: UIViewController  ,UICollectionViewDelegate,UICollec
             self.vartaArray .removeAllObjects()
             self.vartaArray .addObjects(from: array!)
             self.collection?.reloadData()
-            
         }
     }
 

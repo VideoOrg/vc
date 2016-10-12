@@ -32,6 +32,7 @@
 		84697DB01D8E888B0055656A /* VCTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84697DAC1D8E888B0055656A /* VCTabBarController.swift */; };
 		84697DB41D8E889E0055656A /* VCTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84697DB21D8E889E0055656A /* VCTools.swift */; };
 		847F3F081D9CA50C001614C1 /* VCHomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847F3F071D9CA50C001614C1 /* VCHomeModel.swift */; };
+		8493CE531DADCB0200DA8527 /* VCAdvertisementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8493CE521DADCB0200DA8527 /* VCAdvertisementViewController.swift */; };
 		8493DB891D92C1B200AEA892 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8493DB881D92C1B200AEA892 /* CoreLocation.framework */; };
 		8493DB8B1D92C1BC00AEA892 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8493DB8A1D92C1BC00AEA892 /* Security.framework */; };
 		8493DB8D1D92C1C800AEA892 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8493DB8C1D92C1C800AEA892 /* CoreGraphics.framework */; };
@@ -75,6 +76,7 @@
 		84697DAC1D8E888B0055656A /* VCTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCTabBarController.swift; sourceTree = "<group>"; };
 		84697DB21D8E889E0055656A /* VCTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCTools.swift; sourceTree = "<group>"; };
 		847F3F071D9CA50C001614C1 /* VCHomeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCHomeModel.swift; sourceTree = "<group>"; };
+		8493CE521DADCB0200DA8527 /* VCAdvertisementViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCAdvertisementViewController.swift; sourceTree = "<group>"; };
 		8493DB881D92C1B200AEA892 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		8493DB8A1D92C1BC00AEA892 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		8493DB8C1D92C1C800AEA892 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -223,6 +225,7 @@
 				84697DAB1D8E888B0055656A /* VCHomeViewController.swift */,
 				84697DAC1D8E888B0055656A /* VCTabBarController.swift */,
 				8423C6CE1D90D7DB005CCCC9 /* YXBaseViewController.swift */,
+				8493CE521DADCB0200DA8527 /* VCAdvertisementViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -451,6 +454,7 @@
 				42C233411D92852400457144 /* PreviewView.swift in Sources */,
 				84697DAD1D8E888B0055656A /* VCBaseNavigationViewController.swift in Sources */,
 				42C233491D92BD8C00457144 /* NSFileManager+THAdditions.m in Sources */,
+				8493CE531DADCB0200DA8527 /* VCAdvertisementViewController.swift in Sources */,
 				42C2333F1D9284B500457144 /* CameraController.swift in Sources */,
 				84697DAE1D8E888B0055656A /* VCCamerViewController.swift in Sources */,
 				84697DB01D8E888B0055656A /* VCTabBarController.swift in Sources */,
