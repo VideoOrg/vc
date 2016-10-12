@@ -16,6 +16,7 @@
 		42C233451D92865E00457144 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42C233441D92865E00457144 /* AudioToolbox.framework */; };
 		42C233491D92BD8C00457144 /* NSFileManager+THAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C233481D92BD8C00457144 /* NSFileManager+THAdditions.m */; };
 		8423C6CF1D90D7DB005CCCC9 /* YXBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8423C6CE1D90D7DB005CCCC9 /* YXBaseViewController.swift */; };
+		842C9E4D1DAE84400066FD15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 842C9E4C1DAE84400066FD15 /* LaunchScreen.storyboard */; };
 		842D81CB1D9518F0001CD49D /* VCAVPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842D81CA1D9518F0001CD49D /* VCAVPlayerView.swift */; };
 		843FC47F1D938CAF00AF61C3 /* YXHomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843FC47E1D938CAF00AF61C3 /* YXHomeCollectionViewCell.swift */; };
 		844AF1BA1DAB2C3100D27C75 /* VCVideoPreviewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844AF1B91DAB2C3100D27C75 /* VCVideoPreviewsViewController.swift */; };
@@ -43,7 +44,6 @@
 		8493DB991D92C23A00AEA892 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8493DB981D92C23A00AEA892 /* libicucore.tbd */; };
 		8493DB9B1D92C24F00AEA892 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8493DB9A1D92C24F00AEA892 /* libsqlite3.tbd */; };
 		84D789081D99FF160047DD06 /* VCMyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D789071D99FF160047DD06 /* VCMyViewController.swift */; };
-		84E0C71D1DAE63FC00C500BF /* wwww.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84E0C71C1DAE63FC00C500BF /* wwww.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +57,7 @@
 		42C233471D92BD8C00457144 /* NSFileManager+THAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+THAdditions.h"; sourceTree = "<group>"; };
 		42C233481D92BD8C00457144 /* NSFileManager+THAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+THAdditions.m"; sourceTree = "<group>"; };
 		8423C6CE1D90D7DB005CCCC9 /* YXBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YXBaseViewController.swift; sourceTree = "<group>"; };
+		842C9E4C1DAE84400066FD15 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ../LaunchScreen.storyboard; sourceTree = "<group>"; };
 		842D81CA1D9518F0001CD49D /* VCAVPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCAVPlayerView.swift; sourceTree = "<group>"; };
 		843FC47E1D938CAF00AF61C3 /* YXHomeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YXHomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		843FC4861D938F7000AF61C3 /* YXVideoCapture-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YXVideoCapture-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -87,7 +88,6 @@
 		8493DB981D92C23A00AEA892 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
 		8493DB9A1D92C24F00AEA892 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		84D789071D99FF160047DD06 /* VCMyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCMyViewController.swift; sourceTree = "<group>"; };
-		84E0C71C1DAE63FC00C500BF /* wwww.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = wwww.storyboard; sourceTree = "<group>"; };
 		89DBC3451D464B7F10415766 /* Pods-YXVideoCapture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YXVideoCapture.release.xcconfig"; path = "Pods/Target Support Files/Pods-YXVideoCapture/Pods-YXVideoCapture.release.xcconfig"; sourceTree = "<group>"; };
 		B463DA807075BD5028F7737F /* Pods_YXVideoCapture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YXVideoCapture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -183,7 +183,6 @@
 		84697D8A1D8E885A0055656A = {
 			isa = PBXGroup;
 			children = (
-				84E0C71C1DAE63FC00C500BF /* wwww.storyboard */,
 				84697D951D8E885A0055656A /* YXVideoCapture */,
 				84697D941D8E885A0055656A /* Products */,
 				596875B39D1A1B8D77985ACF /* Pods */,
@@ -209,6 +208,7 @@
 				84697DA81D8E888B0055656A /* ViewControllers */,
 				84697D961D8E885A0055656A /* AppDelegate.swift */,
 				84697D9A1D8E885A0055656A /* Main.storyboard */,
+				842C9E4C1DAE84400066FD15 /* LaunchScreen.storyboard */,
 				84697D9D1D8E885A0055656A /* Assets.xcassets */,
 				84697DA21D8E885A0055656A /* Info.plist */,
 			);
@@ -323,9 +323,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				842C9E4D1DAE84400066FD15 /* LaunchScreen.storyboard in Resources */,
 				84697D9E1D8E885A0055656A /* Assets.xcassets in Resources */,
 				84697D9C1D8E885A0055656A /* Main.storyboard in Resources */,
-				84E0C71D1DAE63FC00C500BF /* wwww.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
