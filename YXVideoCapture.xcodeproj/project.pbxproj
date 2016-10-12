@@ -25,7 +25,6 @@
 		84697D971D8E885A0055656A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84697D961D8E885A0055656A /* AppDelegate.swift */; };
 		84697D9C1D8E885A0055656A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84697D9A1D8E885A0055656A /* Main.storyboard */; };
 		84697D9E1D8E885A0055656A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84697D9D1D8E885A0055656A /* Assets.xcassets */; };
-		84697DA11D8E885A0055656A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84697D9F1D8E885A0055656A /* LaunchScreen.storyboard */; };
 		84697DAD1D8E888B0055656A /* VCBaseNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84697DA91D8E888B0055656A /* VCBaseNavigationViewController.swift */; };
 		84697DAE1D8E888B0055656A /* VCCamerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84697DAA1D8E888B0055656A /* VCCamerViewController.swift */; };
 		84697DAF1D8E888B0055656A /* VCHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84697DAB1D8E888B0055656A /* VCHomeViewController.swift */; };
@@ -44,6 +43,7 @@
 		8493DB991D92C23A00AEA892 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8493DB981D92C23A00AEA892 /* libicucore.tbd */; };
 		8493DB9B1D92C24F00AEA892 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8493DB9A1D92C24F00AEA892 /* libsqlite3.tbd */; };
 		84D789081D99FF160047DD06 /* VCMyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D789071D99FF160047DD06 /* VCMyViewController.swift */; };
+		84E0C71D1DAE63FC00C500BF /* wwww.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84E0C71C1DAE63FC00C500BF /* wwww.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,7 +68,6 @@
 		84697D961D8E885A0055656A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84697D9B1D8E885A0055656A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84697D9D1D8E885A0055656A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		84697DA01D8E885A0055656A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84697DA21D8E885A0055656A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84697DA91D8E888B0055656A /* VCBaseNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCBaseNavigationViewController.swift; sourceTree = "<group>"; };
 		84697DAA1D8E888B0055656A /* VCCamerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCCamerViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +87,7 @@
 		8493DB981D92C23A00AEA892 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
 		8493DB9A1D92C24F00AEA892 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		84D789071D99FF160047DD06 /* VCMyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCMyViewController.swift; sourceTree = "<group>"; };
+		84E0C71C1DAE63FC00C500BF /* wwww.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = wwww.storyboard; sourceTree = "<group>"; };
 		89DBC3451D464B7F10415766 /* Pods-YXVideoCapture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YXVideoCapture.release.xcconfig"; path = "Pods/Target Support Files/Pods-YXVideoCapture/Pods-YXVideoCapture.release.xcconfig"; sourceTree = "<group>"; };
 		B463DA807075BD5028F7737F /* Pods_YXVideoCapture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YXVideoCapture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -183,6 +183,7 @@
 		84697D8A1D8E885A0055656A = {
 			isa = PBXGroup;
 			children = (
+				84E0C71C1DAE63FC00C500BF /* wwww.storyboard */,
 				84697D951D8E885A0055656A /* YXVideoCapture */,
 				84697D941D8E885A0055656A /* Products */,
 				596875B39D1A1B8D77985ACF /* Pods */,
@@ -209,7 +210,6 @@
 				84697D961D8E885A0055656A /* AppDelegate.swift */,
 				84697D9A1D8E885A0055656A /* Main.storyboard */,
 				84697D9D1D8E885A0055656A /* Assets.xcassets */,
-				84697D9F1D8E885A0055656A /* LaunchScreen.storyboard */,
 				84697DA21D8E885A0055656A /* Info.plist */,
 			);
 			path = YXVideoCapture;
@@ -323,9 +323,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84697DA11D8E885A0055656A /* LaunchScreen.storyboard in Resources */,
 				84697D9E1D8E885A0055656A /* Assets.xcassets in Resources */,
 				84697D9C1D8E885A0055656A /* Main.storyboard in Resources */,
+				84E0C71D1DAE63FC00C500BF /* wwww.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,14 +475,6 @@
 				84697D9B1D8E885A0055656A /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		84697D9F1D8E885A0055656A /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				84697DA01D8E885A0055656A /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
